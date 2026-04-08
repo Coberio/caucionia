@@ -1,0 +1,451 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <!-- ============================================================
+       META & SEO
+       ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Términos y Condiciones del Servicio de IA | CaucionIA</title>
+  <meta name="description" content="Términos y condiciones de uso de los servicios de inteligencia artificial agéntica de CaucionIA para el seguro de caución." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://caucionia.com/terminos" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://caucionia.com/terminos" />
+  <meta property="og:title" content="Términos y Condiciones del Servicio de IA | CaucionIA" />
+  <meta property="og:description" content="Términos y condiciones de uso de los servicios de inteligencia artificial agéntica de CaucionIA para el seguro de caución." />
+  <meta property="og:locale" content="es_ES" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Términos y Condiciones del Servicio de IA | CaucionIA" />
+  <meta name="twitter:description" content="Términos y condiciones de uso de los servicios de inteligencia artificial agéntica de CaucionIA para el seguro de caución." />
+
+  <!-- Structured Data: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://caucionia.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Términos del Servicio",
+        "item": "https://caucionia.com/terminos"
+      }
+    ]
+  }
+  </script>
+
+  <!-- ============================================================
+       TAILWIND CSS CDN (Play CDN con config personalizada)
+       ============================================================ -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy:        '#0A2540',
+            'navy-800':  '#0d2f4e',
+            'navy-700':  '#103a60',
+            'navy-600':  '#144a7a',
+            green:       '#00C48C',
+            'green-600': '#00a878',
+            'green-100': '#e0faf2',
+            orange:      '#FF6B35',
+            'orange-600':'#e55a25',
+            'orange-100':'#fff0ea',
+            'slate-warm': '#f7f8fa',
+            'slate-100':  '#eef1f6',
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+            display: ['Fraunces', 'Georgia', 'serif'],
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.6s cubic-bezier(0.16,1,0.3,1) both',
+            'fade-in':    'fadeIn 0.5s cubic-bezier(0.16,1,0.3,1) both',
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%':   { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            fadeIn: {
+              '0%':   { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Google Fonts: Plus Jakarta Sans + Fraunces -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800;9..144,900&display=swap" rel="stylesheet" />
+
+  <!-- Alpine.js -->
+  <script defer src="https://unpkg.com/alpinejs@3.14.1/dist/cdn.min.js"></script>
+
+  <!-- ============================================================
+       ESTILOS GLOBALES
+       ============================================================ -->
+  <style>
+    html { scroll-behavior: smooth; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    [x-cloak] { display: none !important; }
+
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #0A2540; }
+    ::-webkit-scrollbar-thumb { background: #00C48C; border-radius: 3px; }
+
+    /* Focus-visible para accesibilidad */
+    :focus-visible {
+      outline: 2px solid #00C48C;
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-warm text-navy font-sans antialiased">
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header
+  class="sticky top-0 z-50 bg-navy border-b border-white/10 shadow-lg"
+  x-data="{ mobileOpen: false }"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 lg:h-18">
+
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-2.5 flex-shrink-0" aria-label="CaucionIA - Inicio">
+        <div class="w-8 h-8 rounded-lg bg-green flex items-center justify-center flex-shrink-0">
+          <svg class="w-5 h-5 text-navy" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+          </svg>
+        </div>
+        <div class="flex flex-col leading-tight">
+          <span class="text-white font-bold text-lg tracking-tight">Caución<span class="text-green">IA</span></span>
+          <span class="text-white/70 text-xs hidden sm:block">Inteligencia Artificial Agéntica</span>
+        </div>
+      </a>
+
+      <!-- Volver link -->
+      <a
+        href="/"
+        class="inline-flex items-center gap-2 text-white/80 hover:text-green transition-colors text-sm font-medium px-3 py-2 rounded-md hover:bg-white/5"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"/>
+        </svg>
+        Volver al inicio
+      </a>
+
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================
+     BREADCRUMB
+     ============================================================ -->
+<nav class="bg-white border-b border-slate-100" aria-label="Breadcrumb">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+    <ol class="flex items-center gap-2 text-sm" role="list">
+      <li>
+        <a href="/" class="text-navy/60 hover:text-green transition-colors">Inicio</a>
+      </li>
+      <li class="text-navy/30" aria-hidden="true">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      </li>
+      <li>
+        <span class="text-navy font-semibold" aria-current="page">Términos del Servicio</span>
+      </li>
+    </ol>
+  </div>
+</nav>
+
+<!-- ============================================================
+     CONTENIDO LEGAL
+     ============================================================ -->
+<main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+
+  <!-- Encabezado de página -->
+  <div class="mb-12">
+    <h1 class="font-display text-3xl sm:text-4xl font-bold text-navy mb-4 leading-tight">
+      Términos y Condiciones del Servicio de IA
+    </h1>
+    <p class="text-navy/60 text-sm">
+      Última actualización: 9 de abril de 2026
+    </p>
+  </div>
+
+  <!-- Cuerpo legal -->
+  <div class="prose-legal space-y-10 text-navy/80 text-base leading-relaxed">
+
+    <!-- Sección 1 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">1. Introducción</h2>
+
+      <p>
+        Los presentes Términos y Condiciones regulan el acceso y uso de los servicios de inteligencia artificial agéntica proporcionados por Coberio, S.L. (&laquo;COBERIO&raquo;) a través de la plataforma CaucionIA (caucionia.com).
+      </p>
+
+      <p class="mt-4">
+        Estos Términos complementan el Aviso Legal y Condiciones Generales del Sitio Web. En caso de contradicción, prevalecerán las disposiciones más específicas de estos Términos.
+      </p>
+    </section>
+
+    <!-- Sección 2 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">2. Descripción del Servicio</h2>
+
+      <p>
+        CaucionIA proporciona servicios de inteligencia artificial aplicada al seguro de caución, que pueden incluir:
+      </p>
+      <ol class="mt-2 space-y-2 list-[lower-alpha] pl-6 text-sm">
+        <li>Agentes de IA conversacionales para atención y orientación al Usuario.</li>
+        <li>Análisis automatizado de documentación financiera y generación de scoring de riesgo.</li>
+        <li>Monitorización automatizada de portales de licitación pública (PLACE, plataformas autonómicas).</li>
+        <li>Generación automatizada de propuestas y documentación.</li>
+        <li>Herramientas de prospección para intermediarios de seguros.</li>
+      </ol>
+
+      <div class="mt-6 bg-orange-100 border border-orange/20 rounded-xl p-6">
+        <p class="text-sm font-semibold text-navy">
+          Los servicios de IA son herramientas de apoyo. <strong>No constituyen asesoramiento financiero, jurídico ni de seguros.</strong> La decisión final sobre cualquier operación corresponde al Usuario y, en su caso, a la aseguradora.
+        </p>
+      </div>
+    </section>
+
+    <!-- Sección 3 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">3. Usuarios Autorizados</h2>
+
+      <p>
+        El servicio está dirigido a:
+      </p>
+      <ol class="mt-2 space-y-2 list-[lower-alpha] pl-6 text-sm">
+        <li>Profesionales y empresas que actúen en un contexto empresarial o profesional.</li>
+        <li>Corredores, agentes y mediadores de seguros.</li>
+        <li>Entidades aseguradoras y agencias de suscripción (MGAs).</li>
+        <li>Mayores de 18 años con capacidad jurídica para contratar.</li>
+      </ol>
+    </section>
+
+    <!-- Sección 4 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">4. Uso de Modelos de IA de Terceros</h2>
+
+      <p>
+        CaucionIA utiliza modelos de lenguaje de gran escala (LLMs) proporcionados por terceros como motor de inteligencia artificial. En relación con estos modelos:
+      </p>
+      <ol class="mt-2 space-y-2 list-[lower-alpha] pl-6 text-sm">
+        <li>Los datos del Usuario no se utilizan para entrenar los modelos de IA de terceros.</li>
+        <li>Los datos se procesan en entornos aislados y seguros.</li>
+        <li>COBERIO aplica mecanismos adicionales de seguridad y filtrado sobre las respuestas de los modelos.</li>
+        <li>Las respuestas generadas por IA pueden contener imprecisiones o alucinaciones. El Usuario debe verificar toda información crítica.</li>
+      </ol>
+    </section>
+
+    <!-- Sección 5 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">5. Propiedad Intelectual sobre los Datos</h2>
+
+      <ol class="mt-2 space-y-2 list-[lower-alpha] pl-6 text-sm">
+        <li>Los datos, documentos e información proporcionados por el Usuario son y seguirán siendo propiedad exclusiva del Usuario.</li>
+        <li>COBERIO no utiliza los datos del Usuario para fines distintos de la prestación del servicio contratado.</li>
+        <li>El contenido generado por los modelos de IA de terceros se rige por los términos de uso de los respectivos proveedores.</li>
+      </ol>
+    </section>
+
+    <!-- Sección 6 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">6. Limitaciones de Responsabilidad</h2>
+
+      <ol class="mt-2 space-y-2 list-[lower-alpha] pl-6 text-sm">
+        <li>COBERIO no será responsable de las decisiones tomadas por el Usuario en base a las respuestas o análisis proporcionados por la IA.</li>
+        <li>Los resultados de scoring y precalificación son orientativos. La aceptación del riesgo depende exclusivamente de la aseguradora.</li>
+        <li>COBERIO no garantiza la disponibilidad ininterrumpida del servicio de IA ni la ausencia de errores.</li>
+        <li>En ningún caso la responsabilidad total de COBERIO frente al Usuario excederá el importe de las cantidades efectivamente pagadas por el Usuario en los 12 meses anteriores al evento que genere la responsabilidad.</li>
+      </ol>
+    </section>
+
+    <!-- Sección 7 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">7. Uso Ético y Prohibiciones</h2>
+
+      <p>
+        El Usuario se compromete a:
+      </p>
+      <ol class="mt-2 space-y-2 list-[lower-alpha] pl-6 text-sm">
+        <li>No utilizar los servicios de IA para fines ilegales, discriminatorios o fraudulentos.</li>
+        <li>No intentar eludir los mecanismos de seguridad o las restricciones de la plataforma.</li>
+        <li>No introducir información falsa o manipulada con el objetivo de obtener un scoring o precalificación indebidos.</li>
+        <li>No realizar ingeniería inversa sobre los algoritmos o modelos de IA.</li>
+      </ol>
+
+      <p class="mt-4">
+        COBERIO se reserva el derecho a suspender o cancelar el acceso del Usuario que incumpla estas obligaciones, sin perjuicio de las acciones legales que pudieran corresponder.
+      </p>
+    </section>
+
+    <!-- Sección 8 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">8. Eliminación de Cuenta y Datos</h2>
+
+      <p>
+        El Usuario podrá solicitar la eliminación total de su cuenta y datos enviando un correo a <a href="mailto:dpo@coberio.com" class="text-green hover:text-green-600 underline underline-offset-2 transition-colors">dpo@coberio.com</a>. La eliminación se ejecutará en un plazo máximo de 30 días y comprenderá:
+      </p>
+      <ol class="mt-2 space-y-2 list-[lower-alpha] pl-6 text-sm">
+        <li>Todos los datos personales del Usuario en la plataforma.</li>
+        <li>Todas las conversaciones y análisis generados.</li>
+        <li>Los resultados de scoring y precalificación.</li>
+      </ol>
+
+      <p class="mt-4">
+        Se exceptúan los datos que deban conservarse por obligación legal (ver <a href="/privacidad" class="text-green hover:text-green-600 underline underline-offset-2 transition-colors font-medium">Política de Privacidad</a>) y los registros anonimizados utilizados con fines estadísticos.
+      </p>
+    </section>
+
+    <!-- Sección 9 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">9. Modificaciones</h2>
+
+      <p>
+        COBERIO se reserva el derecho de modificar estos Términos en cualquier momento. Los cambios significativos se comunicarán al Usuario con antelación razonable por correo electrónico. El uso continuado del servicio tras la notificación implica la aceptación de los nuevos Términos.
+      </p>
+    </section>
+
+    <!-- Sección 10 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">10. Legislación Aplicable</h2>
+
+      <p>
+        Estos Términos se rigen por la legislación española. Para la resolución de controversias, las partes se someten a los Juzgados y Tribunales de Málaga (España), salvo que el Usuario tenga condición de consumidor, en cuyo caso serán competentes los de su domicilio.
+      </p>
+    </section>
+
+  </div>
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="bg-navy border-t border-white/10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+
+      <!-- Col 1: Logo + descripción -->
+      <div class="lg:col-span-2">
+        <a href="/" class="flex items-center gap-2.5 mb-4">
+          <div class="w-8 h-8 rounded-lg bg-green flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5 text-navy" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+            </svg>
+          </div>
+          <span class="text-white font-bold text-lg tracking-tight">Caución<span class="text-green">IA</span></span>
+        </a>
+        <p class="text-white/55 text-sm leading-relaxed mb-4 max-w-sm">
+          La primera plataforma de España especializada en la aplicación de inteligencia artificial agéntica al seguro de caución. Emisión digital, precalificación automática y cero burocracia.
+        </p>
+        <div class="inline-flex items-center gap-2 bg-green/10 border border-green/25 text-green text-xs font-semibold px-3 py-1.5 rounded-full mb-4">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+          </svg>
+          Correduría registrada en DGSFP
+        </div>
+        <div class="block">
+          <a
+            href="https://www.dgsfp.mineco.gob.es/es/Registros/Paginas/RegistroCorredores.aspx"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-green hover:text-green-600 text-xs underline underline-offset-2 transition-colors"
+          >
+            Verificar en PUI DGSFP
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 2: Servicios -->
+      <div>
+        <h3 class="text-white font-bold text-sm uppercase tracking-wide mb-4">Servicios</h3>
+        <ul class="space-y-2.5" role="list">
+          <li><a href="/#brokers"      class="text-white/55 hover:text-white text-sm transition-colors">Para Brokers</a></li>
+          <li><a href="/#empresas"     class="text-white/55 hover:text-white text-sm transition-colors">Para Empresas</a></li>
+          <li><a href="/#aseguradoras" class="text-white/55 hover:text-white text-sm transition-colors">Para Aseguradoras</a></li>
+          <li><a href="/#modalidades"  class="text-white/55 hover:text-white text-sm transition-colors">Coberturas</a></li>
+          <li><a href="/#como-funciona" class="text-white/55 hover:text-white text-sm transition-colors">Cómo funciona</a></li>
+          <li><a href="/#faq"          class="text-white/55 hover:text-white text-sm transition-colors">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Legal -->
+      <div>
+        <h3 class="text-white font-bold text-sm uppercase tracking-wide mb-4">Legal y Privacidad</h3>
+        <ul class="space-y-2.5" role="list">
+          <li>
+            <a href="/aviso-legal" class="text-white/55 hover:text-white text-sm transition-colors">Aviso legal</a>
+          </li>
+          <li>
+            <a href="/privacidad" class="text-white/55 hover:text-white text-sm transition-colors">Política de privacidad (RGPD)</a>
+          </li>
+          <li>
+            <a href="/cookies" class="text-white/55 hover:text-white text-sm transition-colors">Política de cookies (LSSI)</a>
+          </li>
+          <li>
+            <a href="/terminos" class="text-white hover:text-green text-sm transition-colors font-medium" aria-current="page">Términos del servicio de IA</a>
+          </li>
+          <li>
+            <a href="/quejas" class="text-white/55 hover:text-white text-sm transition-colors">Canal de quejas y reclamaciones</a>
+          </li>
+          <li>
+            <a
+              href="https://www.dgsfp.mineco.gob.es"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-white/55 hover:text-white text-sm transition-colors"
+            >
+              DGSFP - Supervisión
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p class="text-white/50 text-xs text-center sm:text-left">
+        &copy; 2025 CaucionIA. Todos los derechos reservados. Correduría de seguros inscrita en el Registro de la DGSFP.
+      </p>
+    </div>
+  </div>
+
+</footer>
+
+</body>
+</html>

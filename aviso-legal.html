@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <!-- ============================================================
+       META & SEO
+       ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Aviso Legal y Condiciones Generales | CaucionIA</title>
+  <meta name="description" content="Aviso legal y condiciones generales de contratación de CaucionIA, plataforma de inteligencia artificial agéntica para el seguro de caución en España. Titulares: Coberio S.L. y Coberio Broker S.L.U." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://caucionia.com/aviso-legal" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://caucionia.com/aviso-legal" />
+  <meta property="og:title" content="Aviso Legal y Condiciones Generales | CaucionIA" />
+  <meta property="og:description" content="Aviso legal y condiciones generales de contratación de CaucionIA. Información del titular, condiciones de acceso, propiedad intelectual y más." />
+  <meta property="og:locale" content="es_ES" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Aviso Legal y Condiciones Generales | CaucionIA" />
+  <meta name="twitter:description" content="Aviso legal y condiciones generales de contratación de CaucionIA, plataforma de IA agéntica para el seguro de caución." />
+
+  <!-- Structured Data: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://caucionia.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Aviso Legal",
+        "item": "https://caucionia.com/aviso-legal"
+      }
+    ]
+  }
+  </script>
+
+  <!-- ============================================================
+       TAILWIND CSS CDN (Play CDN con config personalizada)
+       ============================================================ -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy:        '#0A2540',
+            'navy-800':  '#0d2f4e',
+            'navy-700':  '#103a60',
+            'navy-600':  '#144a7a',
+            green:       '#00C48C',
+            'green-600': '#00a878',
+            'green-100': '#e0faf2',
+            orange:      '#FF6B35',
+            'orange-600':'#e55a25',
+            'orange-100':'#fff0ea',
+            'slate-warm': '#f7f8fa',
+            'slate-100':  '#eef1f6',
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+            display: ['Fraunces', 'Georgia', 'serif'],
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.6s cubic-bezier(0.16,1,0.3,1) both',
+            'fade-in':    'fadeIn 0.5s cubic-bezier(0.16,1,0.3,1) both',
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%':   { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            fadeIn: {
+              '0%':   { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Google Fonts: Plus Jakarta Sans + Fraunces -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800;9..144,900&display=swap" rel="stylesheet" />
+
+  <!-- Alpine.js -->
+  <script defer src="https://unpkg.com/alpinejs@3.14.1/dist/cdn.min.js"></script>
+
+  <!-- ============================================================
+       ESTILOS GLOBALES
+       ============================================================ -->
+  <style>
+    html { scroll-behavior: smooth; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    [x-cloak] { display: none !important; }
+
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #0A2540; }
+    ::-webkit-scrollbar-thumb { background: #00C48C; border-radius: 3px; }
+
+    /* Focus-visible para accesibilidad */
+    :focus-visible {
+      outline: 2px solid #00C48C;
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-warm text-navy font-sans antialiased">
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header
+  class="sticky top-0 z-50 bg-navy border-b border-white/10 shadow-lg"
+  x-data="{ mobileOpen: false }"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 lg:h-18">
+
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-2.5 flex-shrink-0" aria-label="CaucionIA - Inicio">
+        <div class="w-8 h-8 rounded-lg bg-green flex items-center justify-center flex-shrink-0">
+          <svg class="w-5 h-5 text-navy" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+          </svg>
+        </div>
+        <div class="flex flex-col leading-tight">
+          <span class="text-white font-bold text-lg tracking-tight">Caución<span class="text-green">IA</span></span>
+          <span class="text-white/70 text-xs hidden sm:block">Inteligencia Artificial Agéntica</span>
+        </div>
+      </a>
+
+      <!-- Volver link -->
+      <a
+        href="/"
+        class="inline-flex items-center gap-2 text-white/80 hover:text-green transition-colors text-sm font-medium px-3 py-2 rounded-md hover:bg-white/5"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"/>
+        </svg>
+        Volver al inicio
+      </a>
+
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================
+     BREADCRUMB
+     ============================================================ -->
+<nav class="bg-white border-b border-slate-100" aria-label="Breadcrumb">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+    <ol class="flex items-center gap-2 text-sm" role="list">
+      <li>
+        <a href="/" class="text-navy/60 hover:text-green transition-colors">Inicio</a>
+      </li>
+      <li class="text-navy/30" aria-hidden="true">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      </li>
+      <li>
+        <span class="text-navy font-semibold" aria-current="page">Aviso Legal</span>
+      </li>
+    </ol>
+  </div>
+</nav>
+
+<!-- ============================================================
+     CONTENIDO LEGAL
+     ============================================================ -->
+<main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+
+  <!-- Encabezado de página -->
+  <div class="mb-12">
+    <h1 class="font-display text-3xl sm:text-4xl font-bold text-navy mb-4 leading-tight">
+      Aviso Legal y Condiciones Generales de Contratación
+    </h1>
+    <p class="text-navy/60 text-sm">
+      Última actualización: 9 de abril de 2026
+    </p>
+  </div>
+
+  <!-- Cuerpo legal -->
+  <div class="prose-legal space-y-10 text-navy/80 text-base leading-relaxed">
+
+    <!-- Sección 1 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">1. Información del Titular</h2>
+
+      <p>
+        En cumplimiento del artículo 10 de la Ley 34/2002, de 11 de julio, de Servicios de la Sociedad de la Información y de Comercio Electrónico (LSSI-CE), se identifican los titulares del sitio web caucionia.com (en adelante, &laquo;el Sitio Web&raquo; o &laquo;CaucionIA&raquo;):
+      </p>
+
+      <div class="mt-6 mb-6 bg-white rounded-xl border border-slate-100 p-6">
+        <h3 class="font-bold text-navy text-lg mb-3">Titular del Sitio Web y de la plataforma tecnológica:</h3>
+        <ul class="space-y-1.5 text-sm">
+          <li><strong>Denominación social:</strong> Coberio, S.L. (en adelante, &laquo;COBERIO&raquo; o &laquo;CaucionIA&raquo;)</li>
+          <li><strong>NIF:</strong> B-10648384</li>
+          <li><strong>Domicilio social:</strong> Calle Alejandro Dumas 17, Oficinas, 29004 Málaga (España)</li>
+          <li><strong>Correo electrónico:</strong> <a href="mailto:hola@coberio.com" class="text-green hover:text-green-600 underline underline-offset-2 transition-colors">hola@coberio.com</a></li>
+          <li><strong>Inscripción:</strong> Registro Mercantil de Málaga, Tomo 6192</li>
+          <li><strong>Objeto social:</strong> Desarrollo de software e inteligencia artificial</li>
+        </ul>
+      </div>
+
+      <div class="mb-6 bg-white rounded-xl border border-slate-100 p-6">
+        <h3 class="font-bold text-navy text-lg mb-3">Correduría de Seguros asociada:</h3>
+        <ul class="space-y-1.5 text-sm">
+          <li><strong>Denominación social:</strong> Coberio Broker, S.L.U. (en adelante, &laquo;COBERIO BROKER&raquo;)</li>
+          <li><strong>NIF:</strong> B-72661291</li>
+          <li><strong>Domicilio social:</strong> Calle Alejandro Dumas 17, Oficinas, 29004 Málaga (España)</li>
+          <li><strong>Clave de inscripción DGSFP:</strong> J4140</li>
+          <li><strong>Inscripción:</strong> Registro Mercantil de Málaga, Tomo 6241, Folio 147, Hoja MA-170237, Inscripción 1</li>
+          <li><strong>Autorizada por:</strong> Dirección General de Seguros y Fondos de Pensiones (DGSFP) como correduría de seguros</li>
+          <li><strong>Verificable en:</strong> <a href="https://www.dgsfp.mineco.gob.es" target="_blank" rel="noopener noreferrer" class="text-green hover:text-green-600 underline underline-offset-2 transition-colors">Punto Único de Información (PUI)</a></li>
+        </ul>
+      </div>
+
+      <p>
+        COBERIO BROKER dispone de Seguro de Responsabilidad Civil profesional y capacidad financiera suficiente conforme al Real Decreto-ley 3/2020, de 4 de febrero, que traspone la Directiva (UE) 2016/97 sobre Distribución de Seguros (IDD).
+      </p>
+
+      <p class="mt-4">
+        COBERIO actúa como desarrollador tecnológico y colaborador externo de COBERIO BROKER. La actividad de mediación de seguros es ejercida exclusivamente por COBERIO BROKER.
+      </p>
+    </section>
+
+    <!-- Sección 2 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">2. Objeto</h2>
+
+      <p>
+        CaucionIA es una plataforma tecnológica que aplica inteligencia artificial agéntica al seguro de caución. A través de ella, COBERIO BROKER intermedia la contratación de seguros de caución entre tomadores (empresas, profesionales) y entidades aseguradoras autorizadas.
+      </p>
+
+      <p class="mt-4">
+        El seguro de caución es un producto regulado por la Ley 50/1980, de 8 de octubre, de Contrato de Seguro (LCS), en particular sus artículos 68 y concordantes. No es un aval bancario; es un seguro emitido por compañías aseguradoras autorizadas.
+      </p>
+
+      <div class="mt-6 bg-orange-100 border border-orange/20 rounded-xl p-6">
+        <h3 class="font-bold text-navy text-lg mb-3">Aviso importante sobre el seguro de caución:</h3>
+        <ul class="space-y-3 text-sm">
+          <li>La contratación del seguro está sujeta a análisis y aceptación por parte de la entidad aseguradora. CaucionIA no garantiza la emisión de ninguna póliza.</li>
+          <li>De conformidad con el artículo 68 LCS, el tomador del seguro está obligado a reembolsar al asegurador el importe de las indemnizaciones que éste satisfaga como consecuencia de la ejecución de la garantía (derecho de recobro).</li>
+          <li>Los precios, coberturas y condiciones mostrados en el Sitio Web tienen carácter orientativo y están sujetos a las Condiciones Particulares y Generales de cada póliza emitida por la aseguradora correspondiente.</li>
+          <li>Las aseguradoras se reservan el derecho de modificar tarifas, coberturas y condiciones de aceptación sin previo aviso.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Sección 3 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">3. Aceptación de las Condiciones</h2>
+
+      <p>
+        La navegación, registro o uso de cualquier funcionalidad del Sitio Web supone la aceptación íntegra de las presentes Condiciones Generales, así como de la Política de Privacidad, la Política de Cookies y demás textos legales disponibles en el Sitio Web. Si el Usuario no está de acuerdo, deberá abstenerse de utilizar el Sitio Web.
+      </p>
+    </section>
+
+    <!-- Sección 4 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">4. Condiciones de Acceso</h2>
+
+      <p>
+        El acceso general al Sitio Web es gratuito y no requiere registro previo. Sin embargo, determinadas funcionalidades (solicitud de presupuestos, carga de documentación financiera, área de cliente) podrán requerir registro y autenticación.
+      </p>
+
+      <p class="mt-4">
+        El envío de datos personales implica la aceptación expresa de la Política de Privacidad.
+      </p>
+
+      <p class="mt-4">El Usuario se compromete a:</p>
+      <ol class="mt-2 space-y-2 list-[lower-alpha] pl-6 text-sm">
+        <li>Acceder al Sitio Web conforme a la buena fe, la ley y las presentes Condiciones.</li>
+        <li>Facilitar datos veraces, exactos y actualizados, siendo el único responsable de su veracidad frente a COBERIO, COBERIO BROKER y las entidades aseguradoras.</li>
+        <li>No utilizar el Sitio Web para fines ilícitos, fraudulentos o que vulneren derechos de terceros.</li>
+      </ol>
+    </section>
+
+    <!-- Sección 5 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">5. Proceso de Contratación del Seguro de Caución</h2>
+
+      <h3 class="font-bold text-navy text-lg mt-6 mb-3">5.1. Presupuesto y precalificación</h3>
+      <p>
+        El Usuario podrá solicitar presupuestos orientativos a través de las herramientas del Sitio Web. La plataforma de IA podrá realizar un análisis automatizado de la información proporcionada (datos financieros, balances, ratios) para generar un scoring de riesgo y una propuesta orientativa. Este análisis tiene carácter meramente informativo y en ningún caso constituye una oferta vinculante.
+      </p>
+
+      <h3 class="font-bold text-navy text-lg mt-6 mb-3">5.2. Solicitud formal</h3>
+      <p>Una vez que el Usuario decida avanzar con la solicitud formal, deberá:</p>
+      <ol class="mt-2 space-y-2 list-[lower-alpha] pl-6 text-sm">
+        <li>Proporcionar toda la documentación requerida (cuentas anuales, declaraciones fiscales, escrituras, pliegos de licitación, etc.).</li>
+        <li>Aceptar expresamente las presentes Condiciones Generales.</li>
+        <li>Efectuar, en su caso, el pago a cuenta de la prima solicitado.</li>
+      </ol>
+
+      <h3 class="font-bold text-navy text-lg mt-6 mb-3">5.3. Aceptación por la aseguradora</h3>
+      <p>
+        La solicitud se transmite a la entidad o entidades aseguradoras que COBERIO BROKER considere más adecuadas según el perfil de riesgo. La decisión final de aceptación o denegación corresponde exclusivamente a la aseguradora.
+      </p>
+      <p class="mt-4">
+        El pago efectuado por el Usuario no garantiza la emisión de la póliza. Si la aseguradora deniega el riesgo, se procederá a la devolución íntegra del importe.
+      </p>
+
+      <h3 class="font-bold text-navy text-lg mt-6 mb-3">5.4. Emisión y documentación</h3>
+      <p>
+        Aceptado el riesgo, la aseguradora emitirá la póliza y el correspondiente certificado de caución. La documentación (Condiciones Particulares, Generales, certificado) se remitirá al Usuario por medios electrónicos. El Usuario consiente expresamente la recepción de documentación en formato digital, renunciando a la recepción en papel.
+      </p>
+
+      <h3 class="font-bold text-navy text-lg mt-6 mb-3">5.5. Garantías en el ámbito de la contratación pública (LCSP)</h3>
+      <p>
+        Cuando el seguro de caución se destine a licitaciones públicas reguladas por la Ley 9/2017, de 8 de noviembre, de Contratos del Sector Público (LCSP):
+      </p>
+      <ul class="mt-2 space-y-2 pl-6 list-disc text-sm">
+        <li>La garantía provisional será del 3&nbsp;% del presupuesto base de licitación (art. 106 LCSP).</li>
+        <li>La garantía definitiva será del 5&nbsp;% del precio del contrato (art. 107 LCSP).</li>
+        <li>El certificado de caución emitido por aseguradora autorizada tiene los mismos efectos jurídicos que el aval bancario.</li>
+      </ul>
+    </section>
+
+    <!-- Sección 6 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">6. Uso de Inteligencia Artificial</h2>
+
+      <p>
+        CaucionIA emplea sistemas de inteligencia artificial agéntica, tanto de desarrollo propio como basados en modelos de terceros (modelos de lenguaje de gran escala, LLMs), para las siguientes funciones:
+      </p>
+      <ol class="mt-2 space-y-2 list-[lower-alpha] pl-6 text-sm">
+        <li>Análisis automatizado de documentación financiera (balances, cuentas anuales, ratios).</li>
+        <li>Scoring de riesgo y precalificación automática.</li>
+        <li>Monitorización de portales de licitación pública.</li>
+        <li>Generación de propuestas y documentación precontractual.</li>
+        <li>Asistencia conversacional al Usuario.</li>
+        <li>Prospección automatizada de oportunidades para intermediarios.</li>
+      </ol>
+
+      <div class="mt-6 bg-orange-100 border border-orange/20 rounded-xl p-6">
+        <h3 class="font-bold text-navy text-lg mb-3">Advertencias sobre el uso de IA:</h3>
+        <ul class="space-y-3 text-sm">
+          <li>Las respuestas, análisis y recomendaciones generadas por la IA tienen carácter orientativo y no sustituyen el criterio profesional de un corredor de seguros, asesor financiero o abogado.</li>
+          <li>La decisión final sobre la aceptación del riesgo y la emisión de la póliza corresponde siempre a la aseguradora.</li>
+          <li>Los datos introducidos por el Usuario en la plataforma (incluidas conversaciones con agentes IA) podrán ser procesados por sistemas de IA de conformidad con la Política de Privacidad.</li>
+          <li>COBERIO no garantiza la exactitud, exhaustividad o actualización de los resultados generados por la IA.</li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- Sección 7 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">7. Política de Devoluciones</h2>
+
+      <p>
+        La política de cancelación del contrato de seguro y devolución de primas se rige por la Ley 50/1980 (LCS) y las condiciones de cada aseguradora:
+      </p>
+      <ol class="mt-2 space-y-2 list-[lower-alpha] pl-6 text-sm">
+        <li>Si la aseguradora deniega el riesgo: devolución íntegra del importe pagado.</li>
+        <li>Si la prima final es superior al importe pagado: el Usuario podrá abonar la diferencia o solicitar la devolución íntegra y la anulación de la solicitud.</li>
+        <li>Si la prima final es inferior: devolución de la diferencia a favor del Usuario.</li>
+      </ol>
+      <p class="mt-4">
+        Las devoluciones se realizarán por el método original de pago o por transferencia bancaria.
+      </p>
+    </section>
+
+    <!-- Sección 8 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">8. Derecho de desistimiento</h2>
+
+      <p>
+        De conformidad con el artículo 10 de la Ley 22/2007, de 11 de julio, sobre comercialización a distancia de servicios financieros, el Tomador tendrá derecho a desistir del contrato sin indicación de motivos ni penalización alguna en el plazo de 14 días naturales desde la notificación de celebración del contrato, siempre que:
+      </p>
+      <ol class="mt-2 space-y-2 list-[lower-alpha] pl-6 text-sm">
+        <li>No se trate de seguros obligatorios.</li>
+        <li>No se haya producido un siniestro durante dicho plazo.</li>
+      </ol>
+      <p class="mt-4">
+        Para ejercer este derecho, el Tomador deberá comunicar su voluntad a COBERIO por escrito (correo electrónico o postal).
+      </p>
+    </section>
+
+    <!-- Sección 9 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">9. Exclusión de Garantías y Limitación de Responsabilidad</h2>
+
+      <p>COBERIO y COBERIO BROKER no se responsabilizan de:</p>
+      <ol class="mt-2 space-y-2 list-[lower-alpha] pl-6 text-sm">
+        <li>La falta de disponibilidad, continuidad o funcionamiento del Sitio Web.</li>
+        <li>Los errores, omisiones o inexactitudes en la información suministrada por aseguradoras o terceros.</li>
+        <li>Las decisiones comerciales adoptadas por el Usuario en base a la información del Sitio Web.</li>
+        <li>Los daños derivados del uso inadecuado del Sitio Web por el Usuario.</li>
+        <li>Las acciones u omisiones de las entidades aseguradoras en relación con la emisión, gestión o ejecución de las pólizas.</li>
+        <li>Los contenidos y políticas de sitios web de terceros enlazados desde el Sitio Web.</li>
+      </ol>
+      <p class="mt-4">
+        COBERIO actúa como mero intermediario tecnológico. La relación contractual del seguro de caución se establece directamente entre el Tomador y la aseguradora.
+      </p>
+    </section>
+
+    <!-- Sección 10 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">10. Propiedad Intelectual e Industrial</h2>
+
+      <p>
+        Todos los contenidos del Sitio Web (textos, diseños, gráficos, logotipos, iconos, software, código fuente, bases de datos) están protegidos por la legislación vigente en materia de propiedad intelectual e industrial y son propiedad de COBERIO o de terceros que han autorizado su uso.
+      </p>
+
+      <p class="mt-4">
+        El Usuario únicamente tiene derecho a un uso privado, no comercial, de dichos contenidos. Queda prohibida su reproducción, distribución, comunicación pública, transformación o explotación sin autorización expresa y por escrito de COBERIO.
+      </p>
+    </section>
+
+    <!-- Sección 11 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">11. Protección de Datos Personales</h2>
+
+      <p>
+        COBERIO y COBERIO BROKER tratan los datos personales conforme al Reglamento (UE) 2016/679 (RGPD) y la Ley Orgánica 3/2018 (LOPDGDD). La información completa sobre el tratamiento se encuentra en la <a href="/privacidad" class="text-green hover:text-green-600 underline underline-offset-2 transition-colors font-medium">Política de Privacidad</a> del Sitio Web.
+      </p>
+    </section>
+
+    <!-- Sección 12 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">12. Modificaciones</h2>
+
+      <p>
+        COBERIO se reserva el derecho a modificar en cualquier momento y sin previo aviso las presentes Condiciones Generales, la Política de Privacidad, la Política de Cookies y cualesquiera otros textos legales del Sitio Web. Las modificaciones entrarán en vigor desde su publicación en el Sitio Web.
+      </p>
+    </section>
+
+    <!-- Sección 13 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">13. Legislación Aplicable y Jurisdicción</h2>
+
+      <p>
+        Las presentes Condiciones se rigen por la legislación española.
+      </p>
+
+      <p class="mt-4">
+        Para la resolución de cualquier controversia, las partes se someten a la jurisdicción de los Juzgados y Tribunales de Málaga (España), con renuncia expresa a cualquier otro fuero que pudiera corresponderles.
+      </p>
+
+      <p class="mt-4">
+        No obstante, cuando el Usuario tenga la condición de consumidor conforme al Real Decreto Legislativo 1/2007, serán competentes los Juzgados y Tribunales del domicilio del consumidor.
+      </p>
+    </section>
+
+  </div>
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="bg-navy border-t border-white/10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+
+      <!-- Col 1: Logo + descripción -->
+      <div class="lg:col-span-2">
+        <a href="/" class="flex items-center gap-2.5 mb-4">
+          <div class="w-8 h-8 rounded-lg bg-green flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5 text-navy" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+            </svg>
+          </div>
+          <span class="text-white font-bold text-lg tracking-tight">Caución<span class="text-green">IA</span></span>
+        </a>
+        <p class="text-white/55 text-sm leading-relaxed mb-4 max-w-sm">
+          La primera plataforma de España especializada en la aplicación de inteligencia artificial agéntica al seguro de caución. Emisión digital, precalificación automática y cero burocracia.
+        </p>
+        <div class="inline-flex items-center gap-2 bg-green/10 border border-green/25 text-green text-xs font-semibold px-3 py-1.5 rounded-full mb-4">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+          </svg>
+          Correduría registrada en DGSFP
+        </div>
+        <div class="block">
+          <a
+            href="https://www.dgsfp.mineco.gob.es/es/Registros/Paginas/RegistroCorredores.aspx"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-green hover:text-green-600 text-xs underline underline-offset-2 transition-colors"
+          >
+            Verificar en PUI DGSFP
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 2: Servicios -->
+      <div>
+        <h3 class="text-white font-bold text-sm uppercase tracking-wide mb-4">Servicios</h3>
+        <ul class="space-y-2.5" role="list">
+          <li><a href="/#brokers"      class="text-white/55 hover:text-white text-sm transition-colors">Para Brokers</a></li>
+          <li><a href="/#empresas"     class="text-white/55 hover:text-white text-sm transition-colors">Para Empresas</a></li>
+          <li><a href="/#aseguradoras" class="text-white/55 hover:text-white text-sm transition-colors">Para Aseguradoras</a></li>
+          <li><a href="/#modalidades"  class="text-white/55 hover:text-white text-sm transition-colors">Coberturas</a></li>
+          <li><a href="/#como-funciona" class="text-white/55 hover:text-white text-sm transition-colors">Cómo funciona</a></li>
+          <li><a href="/#faq"          class="text-white/55 hover:text-white text-sm transition-colors">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Legal -->
+      <div>
+        <h3 class="text-white font-bold text-sm uppercase tracking-wide mb-4">Legal y Privacidad</h3>
+        <ul class="space-y-2.5" role="list">
+          <li>
+            <a href="/aviso-legal" class="text-white hover:text-green text-sm transition-colors font-medium" aria-current="page">Aviso legal</a>
+          </li>
+          <li>
+            <a href="/privacidad" class="text-white/55 hover:text-white text-sm transition-colors">Política de privacidad (RGPD)</a>
+          </li>
+          <li>
+            <a href="/cookies" class="text-white/55 hover:text-white text-sm transition-colors">Política de cookies (LSSI)</a>
+          </li>
+          <li>
+            <a href="/quejas" class="text-white/55 hover:text-white text-sm transition-colors">Canal de quejas y reclamaciones</a>
+          </li>
+          <li>
+            <a
+              href="https://www.dgsfp.mineco.gob.es"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-white/55 hover:text-white text-sm transition-colors"
+            >
+              DGSFP - Supervisión
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p class="text-white/50 text-xs text-center sm:text-left">
+        &copy; 2025 CaucionIA. Todos los derechos reservados. Correduría de seguros inscrita en el Registro de la DGSFP.
+      </p>
+    </div>
+  </div>
+
+</footer>
+
+</body>
+</html>

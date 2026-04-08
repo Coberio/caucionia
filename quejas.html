@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <!-- ============================================================
+       META & SEO
+       ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Canal de Quejas y Reclamaciones | CaucionIA</title>
+  <meta name="description" content="Canal de quejas y reclamaciones de Coberio Broker SLU. Información sobre cómo presentar quejas ante el Servicio de Atención al Cliente y la DGSFP." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://caucionia.com/quejas" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://caucionia.com/quejas" />
+  <meta property="og:title" content="Canal de Quejas y Reclamaciones | CaucionIA" />
+  <meta property="og:description" content="Canal de quejas y reclamaciones de Coberio Broker SLU. Información sobre cómo presentar quejas ante el Servicio de Atención al Cliente y la DGSFP." />
+  <meta property="og:locale" content="es_ES" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Canal de Quejas y Reclamaciones | CaucionIA" />
+  <meta name="twitter:description" content="Canal de quejas y reclamaciones de Coberio Broker SLU. Información sobre cómo presentar quejas ante el Servicio de Atención al Cliente y la DGSFP." />
+
+  <!-- Structured Data: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://caucionia.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Quejas y Reclamaciones",
+        "item": "https://caucionia.com/quejas"
+      }
+    ]
+  }
+  </script>
+
+  <!-- ============================================================
+       TAILWIND CSS CDN (Play CDN con config personalizada)
+       ============================================================ -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy:        '#0A2540',
+            'navy-800':  '#0d2f4e',
+            'navy-700':  '#103a60',
+            'navy-600':  '#144a7a',
+            green:       '#00C48C',
+            'green-600': '#00a878',
+            'green-100': '#e0faf2',
+            orange:      '#FF6B35',
+            'orange-600':'#e55a25',
+            'orange-100':'#fff0ea',
+            'slate-warm': '#f7f8fa',
+            'slate-100':  '#eef1f6',
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+            display: ['Fraunces', 'Georgia', 'serif'],
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.6s cubic-bezier(0.16,1,0.3,1) both',
+            'fade-in':    'fadeIn 0.5s cubic-bezier(0.16,1,0.3,1) both',
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%':   { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            fadeIn: {
+              '0%':   { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Google Fonts: Plus Jakarta Sans + Fraunces -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800;9..144,900&display=swap" rel="stylesheet" />
+
+  <!-- Alpine.js -->
+  <script defer src="https://unpkg.com/alpinejs@3.14.1/dist/cdn.min.js"></script>
+
+  <!-- ============================================================
+       ESTILOS GLOBALES
+       ============================================================ -->
+  <style>
+    html { scroll-behavior: smooth; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    [x-cloak] { display: none !important; }
+
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #0A2540; }
+    ::-webkit-scrollbar-thumb { background: #00C48C; border-radius: 3px; }
+
+    /* Focus-visible para accesibilidad */
+    :focus-visible {
+      outline: 2px solid #00C48C;
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-warm text-navy font-sans antialiased">
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header
+  class="sticky top-0 z-50 bg-navy border-b border-white/10 shadow-lg"
+  x-data="{ mobileOpen: false }"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 lg:h-18">
+
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-2.5 flex-shrink-0" aria-label="CaucionIA - Inicio">
+        <div class="w-8 h-8 rounded-lg bg-green flex items-center justify-center flex-shrink-0">
+          <svg class="w-5 h-5 text-navy" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+          </svg>
+        </div>
+        <div class="flex flex-col leading-tight">
+          <span class="text-white font-bold text-lg tracking-tight">Caución<span class="text-green">IA</span></span>
+          <span class="text-white/70 text-xs hidden sm:block">Inteligencia Artificial Agéntica</span>
+        </div>
+      </a>
+
+      <!-- Volver link -->
+      <a
+        href="/"
+        class="inline-flex items-center gap-2 text-white/80 hover:text-green transition-colors text-sm font-medium px-3 py-2 rounded-md hover:bg-white/5"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"/>
+        </svg>
+        Volver al inicio
+      </a>
+
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================
+     BREADCRUMB
+     ============================================================ -->
+<nav class="bg-white border-b border-slate-100" aria-label="Breadcrumb">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+    <ol class="flex items-center gap-2 text-sm" role="list">
+      <li>
+        <a href="/" class="text-navy/60 hover:text-green transition-colors">Inicio</a>
+      </li>
+      <li class="text-navy/30" aria-hidden="true">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      </li>
+      <li>
+        <span class="text-navy font-semibold" aria-current="page">Quejas y Reclamaciones</span>
+      </li>
+    </ol>
+  </div>
+</nav>
+
+<!-- ============================================================
+     CONTENIDO LEGAL
+     ============================================================ -->
+<main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+
+  <!-- Encabezado de página -->
+  <div class="mb-12">
+    <h1 class="font-display text-3xl sm:text-4xl font-bold text-navy mb-4 leading-tight">
+      Canal de Quejas y Reclamaciones
+    </h1>
+    <p class="text-navy/60 text-sm">
+      Última actualización: 9 de abril de 2026
+    </p>
+  </div>
+
+  <!-- Cuerpo legal -->
+  <div class="prose-legal space-y-10 text-navy/80 text-base leading-relaxed">
+
+    <!-- Sección 1 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">1. Objeto</h2>
+
+      <p>
+        De conformidad con la Orden ECO/734/2004, de 11 de marzo, sobre los departamentos y servicios de atención al cliente y el defensor del cliente de las entidades financieras, y el artículo 182 del Real Decreto-ley 3/2020, COBERIO BROKER pone a disposición de sus clientes el presente canal para la presentación de quejas y reclamaciones relacionadas con los servicios de mediación de seguros.
+      </p>
+    </section>
+
+    <!-- Sección 2 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">2. Quién puede reclamar</h2>
+
+      <p>
+        Podrán presentar quejas y reclamaciones los tomadores, asegurados, beneficiarios, terceros perjudicados y derechohabientes de los seguros intermediados por COBERIO BROKER.
+      </p>
+    </section>
+
+    <!-- Sección 3 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">3. Cómo presentar una queja o reclamación</h2>
+
+      <h3 class="font-bold text-navy text-lg mt-6 mb-3">Paso 1 — Servicio de Atención al Cliente (obligatorio en primera instancia):</h3>
+
+      <p>
+        Las quejas y reclamaciones deben dirigirse en primer lugar al Servicio de Atención al Cliente de COBERIO BROKER:
+      </p>
+
+      <div class="mt-6 mb-6 bg-white rounded-xl border border-slate-100 p-6">
+        <ul class="space-y-1.5 text-sm">
+          <li><strong>Titular:</strong> Jorge Campos Moral</li>
+          <li><strong>Correo electrónico:</strong> <a href="mailto:info@grupow2b.es" class="text-green hover:text-green-600 underline underline-offset-2 transition-colors">info@grupow2b.es</a></li>
+          <li><strong>Dirección postal:</strong> Servicio de Atención al Cliente de COBERIO BROKER, Calle Segundo Mata 1, Planta 2, Oficina 7, 28223 Pozuelo de Alarcón (Madrid)</li>
+        </ul>
+      </div>
+
+      <p>La reclamación deberá incluir:</p>
+      <ol class="mt-2 space-y-2 list-[lower-alpha] pl-6 text-sm">
+        <li>Nombre, apellidos y NIF del reclamante (o denominación social y CIF).</li>
+        <li>Domicilio a efectos de notificaciones y, en su caso, correo electrónico.</li>
+        <li>Número de póliza o referencia de la operación objeto de reclamación.</li>
+        <li>Descripción clara de los hechos y motivos de la queja o reclamación.</li>
+        <li>Documentación que acredite los hechos alegados.</li>
+        <li>Fecha y firma.</li>
+      </ol>
+
+      <p class="mt-6">
+        <strong>Plazo de resolución:</strong> El Servicio de Atención al Cliente resolverá y notificará su decisión en el plazo máximo de <strong>dos meses</strong> desde la presentación de la queja o reclamación.
+      </p>
+    </section>
+
+    <!-- Sección 4 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">4. Segunda instancia — DGSFP</h2>
+
+      <p>
+        Si el Servicio de Atención al Cliente no resuelve satisfactoriamente la reclamación, o transcurre el plazo de dos meses sin respuesta, el interesado podrá acudir al:
+      </p>
+
+      <div class="mt-6 mb-6 bg-white rounded-xl border border-slate-100 p-6">
+        <h3 class="font-bold text-navy text-lg mb-3">Servicio de Reclamaciones de la Dirección General de Seguros y Fondos de Pensiones (DGSFP)</h3>
+        <ul class="space-y-1.5 text-sm">
+          <li><strong>Dirección:</strong> Paseo de la Castellana 44, 28046 Madrid</li>
+          <li><strong>Web:</strong> <a href="https://www.dgsfp.mineco.gob.es" target="_blank" rel="noopener noreferrer" class="text-green hover:text-green-600 underline underline-offset-2 transition-colors">https://www.dgsfp.mineco.gob.es</a></li>
+          <li><strong>Correo electrónico:</strong> Consultar en la web de la DGSFP</li>
+        </ul>
+      </div>
+
+      <p>
+        Es requisito previo haber presentado la reclamación ante el Servicio de Atención al Cliente de COBERIO BROKER y que ésta haya sido denegada o no resuelta en plazo.
+      </p>
+    </section>
+
+    <!-- Sección 5 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">5. Vía Judicial</h2>
+
+      <p>
+        Con independencia de lo anterior, el interesado podrá ejercitar las acciones que le asistan ante los Juzgados y Tribunales competentes en cualquier momento.
+      </p>
+    </section>
+
+    <!-- Sección 6 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">6. Arbitraje de Consumo</h2>
+
+      <p>
+        COBERIO BROKER no está adherido a ninguna junta arbitral de consumo para la resolución de conflictos.
+      </p>
+    </section>
+
+    <!-- Sección 7 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">7. Reclamaciones en materia de Protección de Datos</h2>
+
+      <p>
+        Las reclamaciones relativas al tratamiento de datos personales deberán dirigirse a <a href="mailto:dpo@coberio.com" class="text-green hover:text-green-600 underline underline-offset-2 transition-colors">dpo@coberio.com</a>. Si la respuesta no es satisfactoria, el interesado puede acudir a la Agencia Española de Protección de Datos (<a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer" class="text-green hover:text-green-600 underline underline-offset-2 transition-colors">www.aepd.es</a>).
+      </p>
+    </section>
+
+  </div>
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="bg-navy border-t border-white/10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+
+      <!-- Col 1: Logo + descripción -->
+      <div class="lg:col-span-2">
+        <a href="/" class="flex items-center gap-2.5 mb-4">
+          <div class="w-8 h-8 rounded-lg bg-green flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5 text-navy" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+            </svg>
+          </div>
+          <span class="text-white font-bold text-lg tracking-tight">Caución<span class="text-green">IA</span></span>
+        </a>
+        <p class="text-white/55 text-sm leading-relaxed mb-4 max-w-sm">
+          La primera plataforma de España especializada en la aplicación de inteligencia artificial agéntica al seguro de caución. Emisión digital, precalificación automática y cero burocracia.
+        </p>
+        <div class="inline-flex items-center gap-2 bg-green/10 border border-green/25 text-green text-xs font-semibold px-3 py-1.5 rounded-full mb-4">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+          </svg>
+          Correduría registrada en DGSFP
+        </div>
+        <div class="block">
+          <a
+            href="https://www.dgsfp.mineco.gob.es/es/Registros/Paginas/RegistroCorredores.aspx"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-green hover:text-green-600 text-xs underline underline-offset-2 transition-colors"
+          >
+            Verificar en PUI DGSFP
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 2: Servicios -->
+      <div>
+        <h3 class="text-white font-bold text-sm uppercase tracking-wide mb-4">Servicios</h3>
+        <ul class="space-y-2.5" role="list">
+          <li><a href="/#brokers"      class="text-white/55 hover:text-white text-sm transition-colors">Para Brokers</a></li>
+          <li><a href="/#empresas"     class="text-white/55 hover:text-white text-sm transition-colors">Para Empresas</a></li>
+          <li><a href="/#aseguradoras" class="text-white/55 hover:text-white text-sm transition-colors">Para Aseguradoras</a></li>
+          <li><a href="/#modalidades"  class="text-white/55 hover:text-white text-sm transition-colors">Coberturas</a></li>
+          <li><a href="/#como-funciona" class="text-white/55 hover:text-white text-sm transition-colors">Cómo funciona</a></li>
+          <li><a href="/#faq"          class="text-white/55 hover:text-white text-sm transition-colors">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Legal -->
+      <div>
+        <h3 class="text-white font-bold text-sm uppercase tracking-wide mb-4">Legal y Privacidad</h3>
+        <ul class="space-y-2.5" role="list">
+          <li>
+            <a href="/aviso-legal" class="text-white/55 hover:text-white text-sm transition-colors">Aviso legal</a>
+          </li>
+          <li>
+            <a href="/privacidad" class="text-white/55 hover:text-white text-sm transition-colors">Política de privacidad (RGPD)</a>
+          </li>
+          <li>
+            <a href="/cookies" class="text-white/55 hover:text-white text-sm transition-colors">Política de cookies (LSSI)</a>
+          </li>
+          <li>
+            <a href="/quejas" class="text-white hover:text-green text-sm transition-colors font-medium" aria-current="page">Canal de quejas y reclamaciones</a>
+          </li>
+          <li>
+            <a
+              href="https://www.dgsfp.mineco.gob.es"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-white/55 hover:text-white text-sm transition-colors"
+            >
+              DGSFP - Supervisión
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p class="text-white/50 text-xs text-center sm:text-left">
+        &copy; 2025 CaucionIA. Todos los derechos reservados. Correduría de seguros inscrita en el Registro de la DGSFP.
+      </p>
+    </div>
+  </div>
+
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,628 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <!-- ============================================================
+       META & SEO
+       ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Política de Privacidad | CaucionIA</title>
+  <meta name="description" content="Política de Privacidad de CaucionIA. Información sobre el tratamiento de datos personales conforme al RGPD y la LOPDGDD. Responsables: Coberio SL y Coberio Broker SLU." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://caucionia.com/privacidad" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://caucionia.com/privacidad" />
+  <meta property="og:title" content="Política de Privacidad | CaucionIA" />
+  <meta property="og:description" content="Política de Privacidad de CaucionIA. Tratamiento de datos personales conforme al RGPD y la LOPDGDD." />
+  <meta property="og:locale" content="es_ES" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Política de Privacidad | CaucionIA" />
+  <meta name="twitter:description" content="Política de Privacidad de CaucionIA. Tratamiento de datos personales conforme al RGPD y la LOPDGDD." />
+
+  <!-- ============================================================
+       TAILWIND CSS CDN (Play CDN con config personalizada)
+       ============================================================ -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy:        '#0A2540',
+            'navy-800':  '#0d2f4e',
+            'navy-700':  '#103a60',
+            'navy-600':  '#144a7a',
+            green:       '#00C48C',
+            'green-600': '#00a878',
+            'green-100': '#e0faf2',
+            orange:      '#FF6B35',
+            'orange-600':'#e55a25',
+            'orange-100':'#fff0ea',
+            'slate-warm': '#f7f8fa',
+            'slate-100':  '#eef1f6',
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+            display: ['Fraunces', 'Georgia', 'serif'],
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Google Fonts: Plus Jakarta Sans + Fraunces -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800;9..144,900&display=swap" rel="stylesheet" />
+
+  <!-- Alpine.js -->
+  <script defer src="https://unpkg.com/alpinejs@3.14.1/dist/cdn.min.js"></script>
+
+  <!-- ============================================================
+       ESTILOS GLOBALES
+       ============================================================ -->
+  <style>
+    html { scroll-behavior: smooth; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    [x-cloak] { display: none !important; }
+
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #0A2540; }
+    ::-webkit-scrollbar-thumb { background: #00C48C; border-radius: 3px; }
+
+    :focus-visible {
+      outline: 2px solid #00C48C;
+      outline-offset: 2px;
+    }
+
+    .badge-dgsfp {
+      background: rgba(0,196,140,0.08);
+      border: 1px solid rgba(0,196,140,0.25);
+    }
+  </style>
+</head>
+
+<body
+  class="bg-white font-sans text-navy antialiased"
+  x-data="{ mobileMenuOpen: false }"
+>
+
+<!-- Skip navigation -->
+<a href="#content" class="sr-only focus:not-sr-only focus:absolute focus:top-2 focus:left-2 focus:z-[100] focus:bg-green focus:text-navy focus:px-4 focus:py-2 focus:rounded-lg focus:font-bold focus:text-sm">
+  Saltar al contenido principal
+</a>
+
+<!-- ============================================================
+     BANNER DISCLAIMER LEGAL
+     ============================================================ -->
+<div class="bg-navy text-white/70 text-center text-xs py-1.5 px-4">
+  Sujeto a análisis y aceptación de la aseguradora. Según art. 68 LCS, el tomador debe reembolsar cualquier pago al asegurador.
+  Correduría de seguros registrada en DGSFP.
+</div>
+
+<!-- ============================================================
+     STICKY HEADER
+     ============================================================ -->
+<header
+  class="sticky top-0 z-50 bg-navy border-b border-white/10 shadow-lg"
+  x-data="{ scrolled: false }"
+  @scroll.window="scrolled = window.scrollY > 10"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 lg:h-18">
+
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-2.5 flex-shrink-0" aria-label="CaucionIA - Inicio">
+        <div class="w-8 h-8 rounded-lg bg-green flex items-center justify-center flex-shrink-0">
+          <svg class="w-5 h-5 text-navy" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+          </svg>
+        </div>
+        <div class="flex flex-col leading-tight">
+          <span class="text-white font-bold text-lg tracking-tight">Caución<span class="text-green">IA</span></span>
+          <span class="text-white/70 text-xs hidden sm:block">Inteligencia Artificial Agéntica</span>
+        </div>
+      </a>
+
+      <!-- Desktop nav -->
+      <nav class="hidden lg:flex items-center gap-1" aria-label="Navegación principal">
+        <a href="/"              class="text-white/80 hover:text-green transition-colors text-sm font-medium px-3 py-2 rounded-md hover:bg-white/5">Inicio</a>
+        <a href="/#brokers"      class="text-white/80 hover:text-green transition-colors text-sm font-medium px-3 py-2 rounded-md hover:bg-white/5">Broker</a>
+        <a href="/#empresas"     class="text-white/80 hover:text-green transition-colors text-sm font-medium px-3 py-2 rounded-md hover:bg-white/5">Empresa</a>
+        <a href="/#aseguradoras" class="text-white/80 hover:text-green transition-colors text-sm font-medium px-3 py-2 rounded-md hover:bg-white/5">Aseguradora</a>
+        <a href="/#modalidades"  class="text-white/80 hover:text-green transition-colors text-sm font-medium px-3 py-2 rounded-md hover:bg-white/5">Coberturas</a>
+        <a href="/#faq"          class="text-white/80 hover:text-green transition-colors text-sm font-medium px-3 py-2 rounded-md hover:bg-white/5">FAQ</a>
+      </nav>
+
+      <!-- Right side -->
+      <div class="flex items-center gap-3">
+        <!-- Verificado DGSFP badge -->
+        <a
+          href="https://www.dgsfp.mineco.gob.es/es/Registros/Paginas/RegistroCorredores.aspx"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="badge-dgsfp hidden md:flex items-center gap-1.5 px-2.5 py-1 rounded-full text-green text-xs font-semibold"
+          title="Verificar en PUI DGSFP"
+        >
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+          </svg>
+          Verificado PUI DGSFP
+        </a>
+
+        <!-- CTA button -->
+        <a
+          href="https://tidycal.com/juanmi"
+          target="_blank"
+          rel="noopener noreferrer"
+          class="hidden sm:inline-flex items-center gap-2 bg-green hover:bg-green-600 text-navy font-bold text-sm px-4 py-2 rounded-lg transition-all duration-200 shadow-md"
+        >
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z"/>
+          </svg>
+          Reunión con equipo
+        </a>
+
+        <!-- Mobile menu button -->
+        <button
+          @click="mobileMenuOpen = !mobileMenuOpen"
+          class="lg:hidden text-white p-2 rounded-md hover:bg-white/10 transition-colors"
+          :aria-expanded="mobileMenuOpen"
+          aria-label="Abrir menú"
+        >
+          <svg x-show="!mobileMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+          </svg>
+          <svg x-show="mobileMenuOpen" class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true" x-cloak>
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"/>
+          </svg>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu dropdown -->
+    <div
+      x-show="mobileMenuOpen"
+      x-transition:enter="transition ease-out duration-200"
+      x-transition:enter-start="opacity-0 -translate-y-2"
+      x-transition:enter-end="opacity-100 translate-y-0"
+      x-transition:leave="transition ease-in duration-150"
+      x-transition:leave-start="opacity-100 translate-y-0"
+      x-transition:leave-end="opacity-0 -translate-y-2"
+      class="lg:hidden pb-4"
+      x-cloak
+    >
+      <nav class="flex flex-col gap-1 pt-2 border-t border-white/10" aria-label="Menú móvil">
+        <a href="/"              @click="mobileMenuOpen=false" class="text-white/80 hover:text-green transition-colors text-sm font-medium px-3 py-2.5 rounded-md hover:bg-white/5">Inicio</a>
+        <a href="/#brokers"      @click="mobileMenuOpen=false" class="text-white/80 hover:text-green transition-colors text-sm font-medium px-3 py-2.5 rounded-md hover:bg-white/5">Broker</a>
+        <a href="/#empresas"     @click="mobileMenuOpen=false" class="text-white/80 hover:text-green transition-colors text-sm font-medium px-3 py-2.5 rounded-md hover:bg-white/5">Empresa</a>
+        <a href="/#aseguradoras" @click="mobileMenuOpen=false" class="text-white/80 hover:text-green transition-colors text-sm font-medium px-3 py-2.5 rounded-md hover:bg-white/5">Aseguradora</a>
+        <a href="/#modalidades"  @click="mobileMenuOpen=false" class="text-white/80 hover:text-green transition-colors text-sm font-medium px-3 py-2.5 rounded-md hover:bg-white/5">Coberturas</a>
+        <a href="/#faq"          @click="mobileMenuOpen=false" class="text-white/80 hover:text-green transition-colors text-sm font-medium px-3 py-2.5 rounded-md hover:bg-white/5">FAQ</a>
+        <div class="pt-2 border-t border-white/10 mt-1">
+          <a
+            href="https://tidycal.com/juanmi"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="flex items-center justify-center gap-2 bg-green text-navy font-bold text-sm px-4 py-3 rounded-lg w-full"
+          >
+            Reservar reunión con el equipo fundador
+          </a>
+        </div>
+      </nav>
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================
+     BREADCRUMB
+     ============================================================ -->
+<nav class="bg-slate-warm border-b border-slate-100" aria-label="Breadcrumb">
+  <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+    <ol class="flex items-center gap-2 text-sm" itemscope itemtype="https://schema.org/BreadcrumbList">
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <a href="/" itemprop="item" class="text-navy/60 hover:text-green transition-colors">
+          <span itemprop="name">Inicio</span>
+        </a>
+        <meta itemprop="position" content="1" />
+      </li>
+      <li class="text-navy/40" aria-hidden="true">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/></svg>
+      </li>
+      <li itemprop="itemListElement" itemscope itemtype="https://schema.org/ListItem">
+        <span itemprop="name" class="text-navy font-semibold">Política de Privacidad</span>
+        <meta itemprop="position" content="2" />
+      </li>
+    </ol>
+  </div>
+</nav>
+
+<!-- ============================================================
+     CONTENIDO PRINCIPAL
+     ============================================================ -->
+<main id="content" class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+
+  <!-- Título -->
+  <header class="mb-10">
+    <h1 class="font-display text-3xl sm:text-4xl font-bold text-navy mb-3">Política de Privacidad</h1>
+    <p class="text-navy/60 text-sm">Última actualización: abril 2025</p>
+  </header>
+
+  <!-- Contenido legal -->
+  <div class="prose prose-navy max-w-none space-y-8 text-navy/80 leading-relaxed">
+
+    <!-- Introducción -->
+    <div class="space-y-4">
+      <p>La confidencialidad y la seguridad son valores primordiales para CaucionIA. Asumimos el compromiso de garantizar la privacidad del Usuario en todo momento y de no recabar información innecesaria.</p>
+      <p>La presente Política de Privacidad se establece de conformidad con el Reglamento (UE) 2016/679 del Parlamento Europeo y del Consejo, de 27 de abril de 2016, General de Protección de Datos (RGPD), y la Ley Orgánica 3/2018, de 5 de diciembre, de Protección de Datos Personales y Garantía de los Derechos Digitales (LOPDGDD).</p>
+    </div>
+
+    <!-- 1. Responsables del Tratamiento -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">1. Responsables del Tratamiento</h2>
+
+      <div class="bg-slate-warm rounded-xl p-5 sm:p-6 mb-4 border border-slate-100">
+        <h3 class="font-bold text-navy mb-3">Responsable principal (plataforma tecnológica):</h3>
+        <ul class="space-y-1.5 text-sm">
+          <li><strong>Denominación:</strong> Coberio, S.L.</li>
+          <li><strong>NIF:</strong> B-10648384</li>
+          <li><strong>Domicilio:</strong> Calle Alejandro Dumas 17, Oficinas, 29004 Málaga</li>
+          <li><strong>Contacto DPD:</strong> <a href="mailto:dpo@coberio.com" class="text-green hover:text-green-600 underline underline-offset-2 transition-colors">dpo@coberio.com</a></li>
+        </ul>
+      </div>
+
+      <div class="bg-slate-warm rounded-xl p-5 sm:p-6 mb-6 border border-slate-100">
+        <h3 class="font-bold text-navy mb-3">Co-responsable (mediación de seguros):</h3>
+        <ul class="space-y-1.5 text-sm">
+          <li><strong>Denominación:</strong> Coberio Broker, S.L.U.</li>
+          <li><strong>NIF:</strong> B-72661291</li>
+          <li><strong>Domicilio:</strong> Calle Alejandro Dumas 17, Oficinas, 29004 Málaga</li>
+          <li><strong>Clave DGSFP:</strong> J4140</li>
+        </ul>
+      </div>
+
+      <div class="space-y-4">
+        <p>Cuando el Usuario utilice el Sitio Web caucionia.com con fines de navegación, información o contacto general, COBERIO (Coberio, S.L.) actúa como responsable del tratamiento.</p>
+        <p>Cuando el Usuario inicie un proceso de contratación de un seguro de caución, COBERIO BROKER (Coberio Broker, S.L.U.) actúa como co-responsable del tratamiento en relación con los datos necesarios para la mediación del seguro, conforme al artículo 26 del RGPD.</p>
+        <p>COBERIO podrá actuar además como encargado del tratamiento por cuenta de COBERIO BROKER o de las entidades aseguradoras cuando resulte necesario para la prestación del servicio.</p>
+      </div>
+    </section>
+
+    <!-- 2. Datos Personales Recopilados -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">2. Datos Personales Recopilados</h2>
+      <p class="mb-4">Según la interacción del Usuario con el Sitio Web, podemos recopilar:</p>
+
+      <div class="space-y-5">
+        <div>
+          <h3 class="font-bold text-navy mb-2">a) Datos de contacto general:</h3>
+          <p>Nombre, apellidos, correo electrónico, teléfono (formularios de contacto, solicitud de información, newsletter).</p>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-navy mb-2">b) Datos para la contratación del seguro de caución:</h3>
+          <p class="mb-2">Además de los anteriores:</p>
+          <ul class="list-disc list-inside space-y-1.5 ml-2">
+            <li><strong>Datos identificativos del Tomador y representante legal:</strong> NIF/CIF, denominación social, domicilio, cargo, poderes notariales.</li>
+            <li><strong>Datos económico-financieros:</strong> cuentas anuales, balances, declaraciones fiscales (IRPF, IS), ratios financieros, información de CIRBE (en su caso).</li>
+            <li><strong>Datos relativos a la operación:</strong> importe de la garantía, tipo de caución, número de licitación, pliego de condiciones, contrato subyacente.</li>
+            <li><strong>Datos bancarios:</strong> para el pago de la prima.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-navy mb-2">c) Datos generados por la plataforma de IA:</h3>
+          <ul class="list-disc list-inside space-y-1.5 ml-2">
+            <li>Conversaciones con agentes de IA (texto introducido por el Usuario).</li>
+            <li>Resultados de scoring de riesgo y precalificación automática.</li>
+            <li>Información derivada del análisis automatizado de documentación financiera.</li>
+          </ul>
+        </div>
+
+        <div>
+          <h3 class="font-bold text-navy mb-2">d) Datos de navegación:</h3>
+          <p>Dirección IP, tipo de navegador, idioma, páginas visitadas, tiempo de permanencia (a través de cookies y tecnologías similares, según la <a href="/cookies" class="text-green hover:text-green-600 underline underline-offset-2 transition-colors">Política de Cookies</a>).</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. Finalidades del Tratamiento -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">3. Finalidades del Tratamiento</h2>
+
+      <div class="overflow-x-auto -mx-4 sm:mx-0">
+        <table class="w-full text-sm border border-slate-100 rounded-xl overflow-hidden">
+          <thead>
+            <tr class="bg-navy text-white text-left">
+              <th class="px-4 py-3 font-semibold">Finalidad</th>
+              <th class="px-4 py-3 font-semibold">Base jurídica</th>
+              <th class="px-4 py-3 font-semibold">Responsable</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr class="bg-white">
+              <td class="px-4 py-3">Atender consultas y solicitudes de información</td>
+              <td class="px-4 py-3">Consentimiento del interesado (art. 6.1.a RGPD)</td>
+              <td class="px-4 py-3">Coberio SL</td>
+            </tr>
+            <tr class="bg-slate-warm">
+              <td class="px-4 py-3">Envío de comunicaciones comerciales y newsletter</td>
+              <td class="px-4 py-3">Consentimiento expreso (art. 6.1.a RGPD + art. 21 LSSI)</td>
+              <td class="px-4 py-3">Coberio SL</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-4 py-3">Gestión precontractual y contratación de seguros de caución</td>
+              <td class="px-4 py-3">Ejecución de contrato/medidas precontractuales (art. 6.1.b RGPD)</td>
+              <td class="px-4 py-3">Coberio Broker SLU</td>
+            </tr>
+            <tr class="bg-slate-warm">
+              <td class="px-4 py-3">Análisis automatizado mediante IA (scoring, precalificación)</td>
+              <td class="px-4 py-3">Interés legítimo (art. 6.1.f RGPD) y ejecución de contrato (art. 6.1.b)</td>
+              <td class="px-4 py-3">Coberio SL + Coberio Broker SLU</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-4 py-3">Comunicación de datos a entidades aseguradoras</td>
+              <td class="px-4 py-3">Ejecución de contrato (art. 6.1.b RGPD)</td>
+              <td class="px-4 py-3">Coberio Broker SLU</td>
+            </tr>
+            <tr class="bg-slate-warm">
+              <td class="px-4 py-3">Cumplimiento de obligaciones legales y regulatorias (LCS, LCSP, prevención blanqueo)</td>
+              <td class="px-4 py-3">Obligación legal (art. 6.1.c RGPD)</td>
+              <td class="px-4 py-3">Coberio Broker SLU</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-4 py-3">Mejora del Sitio Web y análisis estadístico</td>
+              <td class="px-4 py-3">Interés legítimo (art. 6.1.f RGPD)</td>
+              <td class="px-4 py-3">Coberio SL</td>
+            </tr>
+            <tr class="bg-slate-warm">
+              <td class="px-4 py-3">Gestión de quejas y reclamaciones</td>
+              <td class="px-4 py-3">Obligación legal (art. 6.1.c RGPD)</td>
+              <td class="px-4 py-3">Coberio Broker SLU</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-4 py-3">Grabación de conversaciones telefónicas (calidad y prueba)</td>
+              <td class="px-4 py-3">Consentimiento (art. 6.1.a RGPD)</td>
+              <td class="px-4 py-3">Coberio SL</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <!-- 4. Decisiones automatizadas -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">4. Información sobre decisiones automatizadas (art. 22 RGPD)</h2>
+      <p class="mb-4">CaucionIA emplea sistemas de inteligencia artificial para el análisis automatizado de datos financieros del Usuario con el fin de generar un scoring de riesgo y una propuesta de precalificación. Este proceso:</p>
+      <ul class="space-y-3 ml-2">
+        <li><strong class="text-navy">No constituye una decisión automatizada con efectos jurídicos vinculantes</strong> para el Usuario. La decisión final sobre la aceptación del riesgo y la emisión del seguro corresponde siempre a la entidad aseguradora, con intervención humana.</li>
+        <li>El Usuario tiene derecho a obtener intervención humana, a expresar su punto de vista y a impugnar la decisión, conforme al artículo 22 del RGPD.</li>
+        <li>La lógica del scoring se basa en ratios financieros estándar (solvencia, liquidez, endeudamiento), historial de licitaciones y sector de actividad.</li>
+      </ul>
+    </section>
+
+    <!-- 5. Destinatarios -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">5. Destinatarios de los Datos</h2>
+      <p class="mb-4">Los datos personales podrán ser comunicados a:</p>
+      <ol class="space-y-3 list-[lower-alpha] list-inside">
+        <li><strong class="text-navy">Entidades aseguradoras</strong> autorizadas con las que COBERIO BROKER mantiene relación mercantil, para la valoración del riesgo y emisión de la póliza.</li>
+        <li><strong class="text-navy">Proveedores tecnológicos</strong> (alojamiento, CRM, herramientas de IA, pasarelas de pago), que actúan como encargados del tratamiento bajo contrato conforme al artículo 28 del RGPD.</li>
+        <li><strong class="text-navy">Autoridades públicas</strong> (DGSFP, AEAT, juzgados, Sepblac) cuando exista obligación legal.</li>
+        <li><strong class="text-navy">Servicio de Atención al Cliente externo</strong> para la gestión de quejas y reclamaciones.</li>
+      </ol>
+      <p class="mt-4">No se venderán ni cederán datos personales a terceros para fines comerciales ajenos a la prestación del servicio.</p>
+    </section>
+
+    <!-- 6. Transferencias Internacionales -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">6. Transferencias Internacionales</h2>
+      <p class="mb-4">Algunos proveedores tecnológicos pueden tener servidores fuera del Espacio Económico Europeo (EEE). En tal caso, las transferencias se realizarán sobre la base de:</p>
+      <ul class="list-disc list-inside space-y-2 ml-2">
+        <li>Cláusulas Contractuales Tipo aprobadas por la Comisión Europea (Decisión 2021/914).</li>
+        <li>Decisiones de adecuación de la Comisión Europea, en su caso.</li>
+        <li>Evaluación previa del impacto de la transferencia (TIA) y medidas complementarias.</li>
+      </ul>
+      <p class="mt-4">Para más información, contacte con <a href="mailto:dpo@coberio.com" class="text-green hover:text-green-600 underline underline-offset-2 transition-colors">dpo@coberio.com</a>.</p>
+    </section>
+
+    <!-- 7. Conservación de los Datos -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">7. Conservación de los Datos</h2>
+
+      <div class="overflow-x-auto -mx-4 sm:mx-0">
+        <table class="w-full text-sm border border-slate-100 rounded-xl overflow-hidden">
+          <thead>
+            <tr class="bg-navy text-white text-left">
+              <th class="px-4 py-3 font-semibold">Tipo de dato</th>
+              <th class="px-4 py-3 font-semibold">Plazo de conservación</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-slate-100">
+            <tr class="bg-white">
+              <td class="px-4 py-3 font-medium text-navy">Datos de contacto general</td>
+              <td class="px-4 py-3">Mientras dure la relación comercial o hasta la retirada del consentimiento</td>
+            </tr>
+            <tr class="bg-slate-warm">
+              <td class="px-4 py-3 font-medium text-navy">Datos de contratación de seguros</td>
+              <td class="px-4 py-3">Durante la vigencia de la póliza + 5 años (plazo de prescripción de acciones derivadas del contrato de seguro, art. 23 LCS)</td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-4 py-3 font-medium text-navy">Datos económico-financieros</td>
+              <td class="px-4 py-3">Durante la vigencia de la póliza + 6 años (obligación mercantil de conservación contable, art. 30 Cco.)</td>
+            </tr>
+            <tr class="bg-slate-warm">
+              <td class="px-4 py-3 font-medium text-navy">Datos de navegación y cookies</td>
+              <td class="px-4 py-3">Según lo indicado en la <a href="/cookies" class="text-green hover:text-green-600 underline underline-offset-2 transition-colors">Política de Cookies</a></td>
+            </tr>
+            <tr class="bg-white">
+              <td class="px-4 py-3 font-medium text-navy">Conversaciones con agentes IA</td>
+              <td class="px-4 py-3">2 años desde la última interacción, salvo que exista relación contractual vigente</td>
+            </tr>
+            <tr class="bg-slate-warm">
+              <td class="px-4 py-3 font-medium text-navy">Datos para prevención de blanqueo</td>
+              <td class="px-4 py-3">10 años (Ley 10/2010)</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+
+      <p class="mt-4">Transcurridos los plazos indicados, los datos serán eliminados o anonimizados.</p>
+    </section>
+
+    <!-- 8. Derechos del Usuario -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">8. Derechos del Usuario</h2>
+      <p class="mb-4">Conforme al RGPD, el Usuario puede ejercer los siguientes derechos:</p>
+      <ul class="space-y-2.5 ml-2">
+        <li><strong class="text-navy">Acceso</strong> a sus datos personales.</li>
+        <li><strong class="text-navy">Rectificación</strong> de datos inexactos o incompletos.</li>
+        <li><strong class="text-navy">Supresión</strong> ("derecho al olvido") cuando los datos ya no sean necesarios.</li>
+        <li><strong class="text-navy">Limitación del tratamiento</strong> en determinadas circunstancias.</li>
+        <li><strong class="text-navy">Oposición</strong> al tratamiento por motivos relacionados con su situación particular.</li>
+        <li><strong class="text-navy">Portabilidad</strong> de los datos en formato estructurado y de uso común.</li>
+        <li><strong class="text-navy">No ser objeto de decisiones automatizadas</strong> con efectos jurídicos vinculantes.</li>
+        <li><strong class="text-navy">Retirada del consentimiento</strong> en cualquier momento, sin que ello afecte a la licitud del tratamiento previo.</li>
+      </ul>
+      <p class="mt-4">Para ejercer estos derechos, envíe un escrito a <a href="mailto:dpo@coberio.com" class="text-green hover:text-green-600 underline underline-offset-2 transition-colors">dpo@coberio.com</a> indicando la referencia "Protección de Datos" y especificando el derecho que desea ejercer. Se le responderá en el plazo máximo de un mes.</p>
+      <p class="mt-4">Si considera que sus derechos no han sido debidamente atendidos, puede presentar una reclamación ante la Agencia Española de Protección de Datos (AEPD): <a href="https://www.aepd.es" target="_blank" rel="noopener noreferrer" class="text-green hover:text-green-600 underline underline-offset-2 transition-colors">www.aepd.es</a>.</p>
+    </section>
+
+    <!-- 9. Seguridad -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">9. Seguridad</h2>
+      <p class="mb-4">Hemos implementado medidas técnicas y organizativas adecuadas para garantizar la confidencialidad, integridad, disponibilidad y resiliencia de los sistemas de tratamiento, incluyendo:</p>
+      <ul class="list-disc list-inside space-y-2 ml-2">
+        <li>Cifrado SSL/TLS de todas las comunicaciones.</li>
+        <li>Cifrado en reposo de datos sensibles.</li>
+        <li>Control de acceso basado en roles.</li>
+        <li>Auditorías periódicas de seguridad.</li>
+        <li>Procedimientos de respuesta ante incidentes.</li>
+        <li>Formación del personal en protección de datos.</li>
+      </ul>
+    </section>
+
+    <!-- 10. Modificaciones -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">10. Modificaciones</h2>
+      <p>Cualquier modificación de esta Política será publicada en el Sitio Web. Se recomienda al Usuario revisarla periódicamente.</p>
+      <p class="mt-4 font-semibold text-navy">Última actualización: abril 2025.</p>
+    </section>
+
+  </div>
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="bg-navy border-t border-white/10">
+  <!-- Footer principal -->
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+
+      <!-- Col 1: Logo + descripción -->
+      <div class="lg:col-span-2">
+        <div class="flex items-center gap-2.5 mb-4">
+          <div class="w-8 h-8 rounded-lg bg-green flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5 text-navy" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+            </svg>
+          </div>
+          <span class="text-white font-bold text-lg tracking-tight">Caución<span class="text-green">IA</span></span>
+        </div>
+        <p class="text-white/55 text-sm leading-relaxed mb-4 max-w-sm">
+          La primera plataforma de España especializada en la aplicación de inteligencia artificial agéntica al seguro de caución. Emisión digital, precalificación automática y cero burocracia.
+        </p>
+        <!-- Registro DGSFP -->
+        <div class="inline-flex items-center gap-2 bg-green/10 border border-green/25 text-green text-xs font-semibold px-3 py-1.5 rounded-full mb-4">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+          </svg>
+          Correduría registrada en DGSFP
+        </div>
+        <div class="block">
+          <a
+            href="https://www.dgsfp.mineco.gob.es/es/Registros/Paginas/RegistroCorredores.aspx"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-green hover:text-green-600 text-xs underline underline-offset-2 transition-colors"
+          >
+            Verificar en PUI DGSFP →
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 2: Servicios -->
+      <div>
+        <h3 class="text-white font-bold text-sm uppercase tracking-wide mb-4">Servicios</h3>
+        <ul class="space-y-2.5" role="list">
+          <li><a href="/#brokers"      class="text-white/55 hover:text-white text-sm transition-colors">Para Brokers</a></li>
+          <li><a href="/#empresas"     class="text-white/55 hover:text-white text-sm transition-colors">Para Empresas</a></li>
+          <li><a href="/#aseguradoras" class="text-white/55 hover:text-white text-sm transition-colors">Para Aseguradoras</a></li>
+          <li><a href="/#modalidades"  class="text-white/55 hover:text-white text-sm transition-colors">Coberturas</a></li>
+          <li><a href="/#como-funciona" class="text-white/55 hover:text-white text-sm transition-colors">Cómo funciona</a></li>
+          <li><a href="/#faq"          class="text-white/55 hover:text-white text-sm transition-colors">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Legal -->
+      <div>
+        <h3 class="text-white font-bold text-sm uppercase tracking-wide mb-4">Legal y Privacidad</h3>
+        <ul class="space-y-2.5" role="list">
+          <li>
+            <a href="/aviso-legal" class="text-white/55 hover:text-white text-sm transition-colors">Aviso legal</a>
+          </li>
+          <li>
+            <a href="/privacidad" class="text-white hover:text-green text-sm font-semibold transition-colors">Política de privacidad (RGPD)</a>
+          </li>
+          <li>
+            <a href="/cookies" class="text-white/55 hover:text-white text-sm transition-colors">Política de cookies (LSSI)</a>
+          </li>
+          <li>
+            <a href="/quejas" class="text-white/55 hover:text-white text-sm transition-colors">Canal de quejas y reclamaciones</a>
+          </li>
+          <li>
+            <a
+              href="https://www.dgsfp.mineco.gob.es"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-white/55 hover:text-white text-sm transition-colors"
+            >
+              DGSFP – Supervisión
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p class="text-white/50 text-xs text-center sm:text-left">
+        © 2025 CaucionIA. Todos los derechos reservados. Correduría de seguros inscrita en el Registro de la DGSFP.
+      </p>
+      <p class="text-white/50 text-xs text-center sm:text-right">
+        Mercado caución España: +16,7 % · ~263 M€ primas (2024) · Fuente: ICEA / Unespa
+      </p>
+    </div>
+  </div>
+
+</footer>
+
+</body>
+</html>

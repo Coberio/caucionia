@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="es" class="scroll-smooth">
+<head>
+  <!-- ============================================================
+       META & SEO
+       ============================================================ -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Información Previa y Nota Informativa | CaucionIA</title>
+  <meta name="description" content="Información previa, protección del asegurado y nota informativa de Coberio Broker SLU, correduría autorizada DGSFP (J4140)." />
+  <meta name="robots" content="index, follow" />
+  <link rel="canonical" href="https://caucionia.com/nota-informativa" />
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:url" content="https://caucionia.com/nota-informativa" />
+  <meta property="og:title" content="Información Previa y Nota Informativa | CaucionIA" />
+  <meta property="og:description" content="Información previa, protección del asegurado y nota informativa de Coberio Broker SLU, correduría autorizada DGSFP (J4140)." />
+  <meta property="og:locale" content="es_ES" />
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Información Previa y Nota Informativa | CaucionIA" />
+  <meta name="twitter:description" content="Información previa, protección del asegurado y nota informativa de Coberio Broker SLU, correduría autorizada DGSFP (J4140)." />
+
+  <!-- Structured Data: BreadcrumbList -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "name": "Inicio",
+        "item": "https://caucionia.com/"
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "name": "Nota Informativa",
+        "item": "https://caucionia.com/nota-informativa"
+      }
+    ]
+  }
+  </script>
+
+  <!-- ============================================================
+       TAILWIND CSS CDN (Play CDN con config personalizada)
+       ============================================================ -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            navy:        '#0A2540',
+            'navy-800':  '#0d2f4e',
+            'navy-700':  '#103a60',
+            'navy-600':  '#144a7a',
+            green:       '#00C48C',
+            'green-600': '#00a878',
+            'green-100': '#e0faf2',
+            orange:      '#FF6B35',
+            'orange-600':'#e55a25',
+            'orange-100':'#fff0ea',
+            'slate-warm': '#f7f8fa',
+            'slate-100':  '#eef1f6',
+          },
+          fontFamily: {
+            sans: ['"Plus Jakarta Sans"', 'system-ui', '-apple-system', 'sans-serif'],
+            display: ['Fraunces', 'Georgia', 'serif'],
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.6s cubic-bezier(0.16,1,0.3,1) both',
+            'fade-in':    'fadeIn 0.5s cubic-bezier(0.16,1,0.3,1) both',
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%':   { opacity: '0', transform: 'translateY(20px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            fadeIn: {
+              '0%':   { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+          },
+        },
+      },
+    }
+  </script>
+
+  <!-- Google Fonts: Plus Jakarta Sans + Fraunces -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Fraunces:opsz,wght@9..144,600;9..144,700;9..144,800;9..144,900&display=swap" rel="stylesheet" />
+
+  <!-- Alpine.js -->
+  <script defer src="https://unpkg.com/alpinejs@3.14.1/dist/cdn.min.js"></script>
+
+  <!-- ============================================================
+       ESTILOS GLOBALES
+       ============================================================ -->
+  <style>
+    html { scroll-behavior: smooth; }
+
+    @media (prefers-reduced-motion: reduce) {
+      html { scroll-behavior: auto; }
+      *, *::before, *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+      }
+    }
+
+    [x-cloak] { display: none !important; }
+
+    ::-webkit-scrollbar { width: 6px; height: 6px; }
+    ::-webkit-scrollbar-track { background: #0A2540; }
+    ::-webkit-scrollbar-thumb { background: #00C48C; border-radius: 3px; }
+
+    /* Focus-visible para accesibilidad */
+    :focus-visible {
+      outline: 2px solid #00C48C;
+      outline-offset: 2px;
+    }
+  </style>
+</head>
+
+<body class="bg-slate-warm text-navy font-sans antialiased">
+
+<!-- ============================================================
+     HEADER
+     ============================================================ -->
+<header
+  class="sticky top-0 z-50 bg-navy border-b border-white/10 shadow-lg"
+  x-data="{ mobileOpen: false }"
+>
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+    <div class="flex items-center justify-between h-16 lg:h-18">
+
+      <!-- Logo -->
+      <a href="/" class="flex items-center gap-2.5 flex-shrink-0" aria-label="CaucionIA - Inicio">
+        <div class="w-8 h-8 rounded-lg bg-green flex items-center justify-center flex-shrink-0">
+          <svg class="w-5 h-5 text-navy" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+          </svg>
+        </div>
+        <div class="flex flex-col leading-tight">
+          <span class="text-white font-bold text-lg tracking-tight">Caución<span class="text-green">IA</span></span>
+          <span class="text-white/70 text-xs hidden sm:block">Inteligencia Artificial Agéntica</span>
+        </div>
+      </a>
+
+      <!-- Volver link -->
+      <a
+        href="/"
+        class="inline-flex items-center gap-2 text-white/80 hover:text-green transition-colors text-sm font-medium px-3 py-2 rounded-md hover:bg-white/5"
+      >
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24" aria-hidden="true">
+          <path stroke-linecap="round" stroke-linejoin="round" d="M10.5 19.5L3 12m0 0l7.5-7.5M3 12h18"/>
+        </svg>
+        Volver al inicio
+      </a>
+
+    </div>
+  </div>
+</header>
+
+<!-- ============================================================
+     BREADCRUMB
+     ============================================================ -->
+<nav class="bg-white border-b border-slate-100" aria-label="Breadcrumb">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-3">
+    <ol class="flex items-center gap-2 text-sm" role="list">
+      <li>
+        <a href="/" class="text-navy/60 hover:text-green transition-colors">Inicio</a>
+      </li>
+      <li class="text-navy/30" aria-hidden="true">
+        <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7"/></svg>
+      </li>
+      <li>
+        <span class="text-navy font-semibold" aria-current="page">Nota Informativa</span>
+      </li>
+    </ol>
+  </div>
+</nav>
+
+<!-- ============================================================
+     CONTENIDO LEGAL
+     ============================================================ -->
+<main class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16 lg:py-20">
+
+  <!-- Encabezado de página -->
+  <div class="mb-12">
+    <h1 class="font-display text-3xl sm:text-4xl font-bold text-navy mb-4 leading-tight">
+      Información Previa, Protección del Asegurado y Nota Informativa
+    </h1>
+    <p class="text-navy/60 text-sm">
+      Última actualización: 9 de abril de 2026
+    </p>
+  </div>
+
+  <!-- Cuerpo legal -->
+  <div class="prose-legal space-y-10 text-navy/80 text-base leading-relaxed">
+
+    <!-- Introducción -->
+    <section>
+      <p>
+        En cumplimiento de la normativa vigente en materia de distribución de seguros y reaseguros (Real Decreto-ley 3/2020, de 4 de febrero; Real Decreto 1060/2015, de 20 de noviembre), COBERIO BROKER informa al tomador/asegurado de los siguientes extremos con anterioridad a la celebración del contrato de seguro:
+      </p>
+    </section>
+
+    <!-- Sección 1 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">1. Datos del Mediador</h2>
+
+      <div class="mt-4 mb-6 bg-white rounded-xl border border-slate-100 p-6">
+        <ul class="space-y-1.5 text-sm">
+          <li><strong>Denominación social:</strong> Coberio Broker, S.L.U.</li>
+          <li><strong>NIF:</strong> B-72661291</li>
+          <li><strong>Domicilio:</strong> Calle Alejandro Dumas 17, Oficinas, 29004 Málaga (España)</li>
+          <li><strong>Clave de inscripción DGSFP:</strong> <span class="font-bold text-navy">J4140</span></li>
+          <li><strong>Tipo de mediador:</strong> Correduría de seguros</li>
+          <li><strong>Registro:</strong> Registro Administrativo Especial de Mediadores de Seguros, Corredores de Reaseguros y de sus Altos Cargos de la Dirección General de Seguros y Fondos de Pensiones (DGSFP)</li>
+        </ul>
+      </div>
+
+      <p>
+        La inscripción se puede comprobar en el <strong>Punto Único de Información (PUI)</strong> de distribuidores de seguros y reaseguros de la DGSFP (Paseo de la Castellana 44, 28046 Madrid) a través de su página web: <a href="https://www.dgsfp.mineco.gob.es" target="_blank" rel="noopener noreferrer" class="text-green hover:text-green-600 underline underline-offset-2 transition-colors">https://www.dgsfp.mineco.gob.es</a>
+      </p>
+    </section>
+
+    <!-- Sección 2 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">2. Actuación del Mediador</h2>
+
+      <ol class="mt-2 space-y-4 list-[lower-alpha] pl-6 text-sm">
+        <li>COBERIO BROKER <strong>no está contractualmente obligado</strong> a realizar actividades de distribución de seguros exclusivamente con una o varias entidades aseguradoras.</li>
+        <li>COBERIO BROKER <strong>no facilita asesoramiento independiente</strong> basado en un análisis objetivo y personalizado en el sentido del artículo 175.2 del Real Decreto-ley 3/2020. A petición del tomador/asegurado, COBERIO BROKER informará sobre las compañías aseguradoras con las que está autorizado a operar.</li>
+        <li>COBERIO BROKER <strong>no posee participación directa o indirecta superior al 10&nbsp;%</strong> del capital social o de los derechos de voto de ninguna entidad aseguradora. A su vez, ninguna entidad aseguradora posee participación directa o indirecta superior al 10&nbsp;% del capital social o de los derechos de voto del Mediador.</li>
+        <li>COBERIO BROKER <strong>actúa en representación del cliente</strong>.</li>
+        <li>COBERIO BROKER dispone de <strong>Seguro de Responsabilidad Civil profesional</strong> y <strong>capacidad financiera</strong> conforme a lo exigido por la normativa.</li>
+      </ol>
+    </section>
+
+    <!-- Sección 3 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">3. Naturaleza de la Remuneración</h2>
+
+      <p>
+        Por su actividad de distribución del contrato de seguro, COBERIO BROKER percibe una <strong>comisión de la entidad aseguradora</strong>, la cual se encuentra incluida en la prima del seguro. Esta remuneración <strong>no implica un coste adicional</strong> para el cliente respecto al precio de la prima.
+      </p>
+    </section>
+
+    <!-- Sección 4 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">4. Información específica sobre el Seguro de Caución</h2>
+
+      <p>
+        Con carácter previo a la celebración del contrato, COBERIO BROKER facilitará al tomador:
+      </p>
+
+      <ol class="mt-2 space-y-2 list-[lower-alpha] pl-6 text-sm">
+        <li><strong>Documento de Información Previa sobre el Producto de Seguro (IPID)</strong> del seguro de caución correspondiente.</li>
+        <li><strong>Condiciones Generales</strong> de la póliza de caución.</li>
+        <li>Información sobre las <strong>coberturas, exclusiones, franquicias y condiciones</strong> del producto.</li>
+        <li>Información sobre el <strong>derecho de recobro</strong> del asegurador conforme al artículo 68 LCS: en caso de que la aseguradora indemnize al beneficiario por ejecución de la garantía, el tomador está obligado a reembolsar íntegramente dicha cantidad al asegurador.</li>
+      </ol>
+    </section>
+
+    <!-- Sección 5 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">5. Uso de Inteligencia Artificial en la distribución</h2>
+
+      <p>
+        COBERIO BROKER, a través de la plataforma CaucionIA desarrollada por COBERIO, utiliza sistemas de inteligencia artificial para:
+      </p>
+
+      <ol class="mt-2 space-y-2 list-[lower-alpha] pl-6 text-sm">
+        <li>Analizar la documentación financiera facilitada por el tomador y generar un scoring de riesgo.</li>
+        <li>Proponer la entidad aseguradora y condiciones más adecuadas al perfil del tomador.</li>
+        <li>Agilizar la emisión de documentación precontractual y contractual.</li>
+      </ol>
+
+      <div class="mt-6 bg-orange-100 border border-orange/20 rounded-xl p-6">
+        <p class="text-sm">
+          Estos procesos automatizados <strong>no sustituyen la supervisión humana</strong> de COBERIO BROKER en su función de mediador. El Usuario será informado cuando interactúe con un sistema de IA.
+        </p>
+      </div>
+    </section>
+
+    <!-- Sección 6 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">6. Instancias de Reclamación y Protección del Cliente</h2>
+
+      <div class="mt-4 mb-6 bg-white rounded-xl border border-slate-100 p-6">
+        <h3 class="font-bold text-navy text-lg mb-3">a) Servicio de Atención al Cliente:</h3>
+        <p class="text-sm mb-3">
+          COBERIO BROKER cuenta con un servicio externo de atención al cliente para atender y resolver quejas y reclamaciones:
+        </p>
+        <ul class="space-y-1.5 text-sm">
+          <li><strong>Titular:</strong> Jorge Campos Moral</li>
+          <li><strong>Correo electrónico:</strong> <a href="mailto:info@grupow2b.es" class="text-green hover:text-green-600 underline underline-offset-2 transition-colors">info@grupow2b.es</a></li>
+          <li><strong>Dirección postal:</strong> Servicio de Atención al Cliente de COBERIO BROKER, Calle Segundo Mata 1, Planta 2, Oficina 7, Pozuelo de Alarcón (Madrid)</li>
+        </ul>
+      </div>
+
+      <div class="mb-6 bg-white rounded-xl border border-slate-100 p-6">
+        <h3 class="font-bold text-navy text-lg mb-3">b) Comisionado para la Defensa del Asegurado:</h3>
+        <p class="text-sm">
+          Si la reclamación no es resuelta satisfactoriamente en el plazo de un mes, el interesado podrá dirigirse al Servicio de Reclamaciones de la Dirección General de Seguros y Fondos de Pensiones (DGSFP), Paseo de la Castellana 44, 28046 Madrid.
+        </p>
+      </div>
+
+      <div class="mb-6 bg-white rounded-xl border border-slate-100 p-6">
+        <h3 class="font-bold text-navy text-lg mb-3">c) Vía judicial:</h3>
+        <p class="text-sm">
+          Los conflictos podrán plantearse ante los juzgados y tribunales competentes. COBERIO BROKER no está adherido a una junta arbitral de consumo.
+        </p>
+      </div>
+    </section>
+
+    <!-- Sección 7 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">7. Protección de Datos</h2>
+
+      <p>
+        COBERIO BROKER cumple con las obligaciones impuestas por el RGPD y la LOPDGDD en relación con los datos personales del tomador/asegurado, tanto en su condición de responsable como de encargado del tratamiento. Más información en la <a href="/privacidad" class="text-green hover:text-green-600 underline underline-offset-2 transition-colors font-medium">Política de Privacidad</a>.
+      </p>
+    </section>
+
+    <!-- Sección 8 -->
+    <section>
+      <h2 class="font-display text-2xl font-bold text-navy mb-4">8. Modalidad de transmisión de la información</h2>
+
+      <p>
+        De conformidad con el artículo 182.5 del Real Decreto-ley 3/2020, COBERIO BROKER facilita la información previa a través de su sitio web (caucionia.com), por resultar adecuado al contexto de las operaciones. El Usuario acepta expresamente esta modalidad y ha sido notificado de la dirección del sitio web donde consultar dicha información. La información permanecerá accesible durante el tiempo razonablemente necesario.
+      </p>
+    </section>
+
+  </div>
+</main>
+
+<!-- ============================================================
+     FOOTER
+     ============================================================ -->
+<footer class="bg-navy border-t border-white/10">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 sm:py-16">
+    <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 lg:gap-12">
+
+      <!-- Col 1: Logo + descripción -->
+      <div class="lg:col-span-2">
+        <a href="/" class="flex items-center gap-2.5 mb-4">
+          <div class="w-8 h-8 rounded-lg bg-green flex items-center justify-center flex-shrink-0">
+            <svg class="w-5 h-5 text-navy" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+            </svg>
+          </div>
+          <span class="text-white font-bold text-lg tracking-tight">Caución<span class="text-green">IA</span></span>
+        </a>
+        <p class="text-white/55 text-sm leading-relaxed mb-4 max-w-sm">
+          La primera plataforma de España especializada en la aplicación de inteligencia artificial agéntica al seguro de caución. Emisión digital, precalificación automática y cero burocracia.
+        </p>
+        <div class="inline-flex items-center gap-2 bg-green/10 border border-green/25 text-green text-xs font-semibold px-3 py-1.5 rounded-full mb-4">
+          <svg class="w-3.5 h-3.5" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true">
+            <path fill-rule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clip-rule="evenodd"/>
+          </svg>
+          Correduría registrada en DGSFP
+        </div>
+        <div class="block">
+          <a
+            href="https://www.dgsfp.mineco.gob.es/es/Registros/Paginas/RegistroCorredores.aspx"
+            target="_blank"
+            rel="noopener noreferrer"
+            class="text-green hover:text-green-600 text-xs underline underline-offset-2 transition-colors"
+          >
+            Verificar en PUI DGSFP
+          </a>
+        </div>
+      </div>
+
+      <!-- Col 2: Servicios -->
+      <div>
+        <h3 class="text-white font-bold text-sm uppercase tracking-wide mb-4">Servicios</h3>
+        <ul class="space-y-2.5" role="list">
+          <li><a href="/#brokers"      class="text-white/55 hover:text-white text-sm transition-colors">Para Brokers</a></li>
+          <li><a href="/#empresas"     class="text-white/55 hover:text-white text-sm transition-colors">Para Empresas</a></li>
+          <li><a href="/#aseguradoras" class="text-white/55 hover:text-white text-sm transition-colors">Para Aseguradoras</a></li>
+          <li><a href="/#modalidades"  class="text-white/55 hover:text-white text-sm transition-colors">Coberturas</a></li>
+          <li><a href="/#como-funciona" class="text-white/55 hover:text-white text-sm transition-colors">Cómo funciona</a></li>
+          <li><a href="/#faq"          class="text-white/55 hover:text-white text-sm transition-colors">Preguntas frecuentes</a></li>
+        </ul>
+      </div>
+
+      <!-- Col 3: Legal -->
+      <div>
+        <h3 class="text-white font-bold text-sm uppercase tracking-wide mb-4">Legal y Privacidad</h3>
+        <ul class="space-y-2.5" role="list">
+          <li>
+            <a href="/aviso-legal" class="text-white/55 hover:text-white text-sm transition-colors">Aviso legal</a>
+          </li>
+          <li>
+            <a href="/nota-informativa" class="text-white hover:text-green text-sm transition-colors font-medium" aria-current="page">Nota informativa</a>
+          </li>
+          <li>
+            <a href="/privacidad" class="text-white/55 hover:text-white text-sm transition-colors">Política de privacidad (RGPD)</a>
+          </li>
+          <li>
+            <a href="/cookies" class="text-white/55 hover:text-white text-sm transition-colors">Política de cookies (LSSI)</a>
+          </li>
+          <li>
+            <a href="/quejas" class="text-white/55 hover:text-white text-sm transition-colors">Canal de quejas y reclamaciones</a>
+          </li>
+          <li>
+            <a
+              href="https://www.dgsfp.mineco.gob.es"
+              target="_blank"
+              rel="noopener noreferrer"
+              class="text-white/55 hover:text-white text-sm transition-colors"
+            >
+              DGSFP - Supervisión
+            </a>
+          </li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="border-t border-white/10">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-5 flex flex-col sm:flex-row items-center justify-between gap-3">
+      <p class="text-white/50 text-xs text-center sm:text-left">
+        &copy; 2025 CaucionIA. Todos los derechos reservados. Correduría de seguros inscrita en el Registro de la DGSFP.
+      </p>
+    </div>
+  </div>
+
+</footer>
+
+</body>
+</html>
